@@ -98,7 +98,7 @@ public:
      * @param b Pointer to the Book object whose availability will be updated.
      * @return The new availability status of the book.
      */
-    bool updateBookAvailablity(Book* b) const;
+    static bool updateBookAvailablity(Book* b) ;
 
     /**
      * @brief Counts the total number of books in the inventory.
@@ -124,7 +124,7 @@ public:
      * @param ISBN The ISBN of the book.
      * @return True if the book is available, false otherwise.
      */
-    bool isBookAvailable(const long long int ISBN) const;
+    bool isBookAvailable(long long int ISBN) const;
 
     /**
      * @brief Finds a book in the inventory by its ISBN.
@@ -134,7 +134,7 @@ public:
      * @param ISBN The ISBN of the book.
      * @return Pointer to the Book object, or nullptr if not found.
      */
-    Book* findBookByISBN(const long long int ISBN) const;
+    Book* findBookByISBN(long long int ISBN) const;
 
     /**
      * @brief Finds a book in the inventory by its title.

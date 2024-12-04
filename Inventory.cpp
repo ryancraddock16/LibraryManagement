@@ -114,7 +114,7 @@ void Inventory::listCheckedOutBooks() const {
  * @param b Pointer to the Book object whose availability will be updated.
  * @return The new availability status of the book.
  */
-bool Inventory::updateBookAvailablity(Book* b) const {
+bool Inventory::updateBookAvailablity(Book* b) {
     b->setIsAvailable(!b->isAvailable());
     return b->isAvailable();
 }

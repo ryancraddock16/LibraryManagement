@@ -1,7 +1,0 @@
-<map id="Inventory::isBookAvailable" name="Inventory::isBookAvailable">
-<area shape="rect" id="Node000001" title="Checks if a book is available by its ISBN." alt="" coords="5,31,182,56"/>
-<area shape="rect" id="Node000002" href="$class_book.html#ac4292948dfd94bcaa0862d009cf32358" title="Check if the book is available." alt="" coords="257,5,379,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,31,241,24,241,29,182,36"/>
-<area shape="rect" id="Node000003" href="$class_library_hash.html#a40f0272e979a0a3b9493d94628947e78" title="Converts an ISBN number into a hash value." alt="" coords="230,55,406,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,50,214,54,214,59,182,56"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="Inventory::listCheckedOutBooks" name="Inventory::listCheckedOutBooks">
-<area shape="rect" id="Node000001" title="Lists all checked&#45;out books in the inventory." alt="" coords="5,5,179,46"/>
-<area shape="rect" id="Node000002" href="$class_book.html#a8e85d9c86fce55c6255e1b7c38cd9bb6" title="Get detailed information about the book." alt="" coords="227,13,326,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,23,211,23,211,28,179,28"/>
-</map>

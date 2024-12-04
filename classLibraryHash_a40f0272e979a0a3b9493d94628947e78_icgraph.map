@@ -1,5 +1,5 @@
 <map id="LibraryHash::ISBNToHash" name="LibraryHash::ISBNToHash">
-<area shape="rect" id="Node000001" title="Converts an ISBN number into a hash value." alt="" coords="231,31,406,56"/>
+<area shape="rect" id="Node000001" title="Converts an ISBN into a hash value." alt="" coords="231,31,406,56"/>
 <area shape="rect" id="Node000002" href="$classInventory.html#a8e2fd9f4b8abe7f2ca08f0ab32dadfc0" title="Finds a book in the inventory by its ISBN." alt="" coords="5,5,183,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,35,183,31,183,26,215,29"/>
 <area shape="rect" id="Node000003" href="$classInventory.html#a5e6448a98c4211580ae463a25ec984fc" title="Checks if a book is available by its ISBN." alt="" coords="7,55,181,80"/>

@@ -64,7 +64,7 @@ public:
      * @param ISBN The ISBN of the book as a string.
      * @return Pointer to the Book object, or nullptr if the book is not found.
      */
-    Book* findBookByISBN(string ISBN) const;
+    [[nodiscard]] Book* findBookByISBN(string ISBN) const;
 
     /**
      * @brief Checks if a book is available in the inventory by its ISBN.
@@ -74,7 +74,7 @@ public:
      * @param ISBN The ISBN of the book as a string.
      * @return True if the book is available, false otherwise.
      */
-    bool isBookAvailable(string ISBN) const;
+    [[nodiscard]] bool isBookAvailable(string ISBN) const;
 
     /**
      * @brief Lists all available books in the inventory.
@@ -107,7 +107,7 @@ public:
      *
      * @return The total number of books in the inventory.
      */
-    long countTotalBooks() const;
+    [[nodiscard]] long countTotalBooks() const;
 
     /**
      * @brief Prints all books in the inventory along with their index.
@@ -124,7 +124,7 @@ public:
      * @param ISBN The ISBN of the book.
      * @return True if the book is available, false otherwise.
      */
-    bool isBookAvailable(long long int ISBN) const;
+    [[nodiscard]] bool isBookAvailable(long long int ISBN) const;
 
     /**
      * @brief Finds a book in the inventory by its ISBN.
@@ -134,7 +134,7 @@ public:
      * @param ISBN The ISBN of the book.
      * @return Pointer to the Book object, or nullptr if not found.
      */
-    Book* findBookByISBN(long long int ISBN) const;
+    [[nodiscard]] Book* findBookByISBN(long long int ISBN) const;
 
     /**
      * @brief Finds a book in the inventory by its title.
@@ -144,7 +144,7 @@ public:
      * @param title The title of the book.
      * @return Pointer to the Book object, or nullptr if not found.
      */
-    Book* findBookByTitle(const string& title) const;
+    [[nodiscard]] Book* findBookByTitle(const string& title) const;
 
 private:
     Book** books; ///< Array of pointers to the books in the inventory.

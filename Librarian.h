@@ -6,7 +6,6 @@
 #define LIBRARYMANAGEMENT_LIBRARIAN_H
 
 #include "Inventory.h"
-#include <iostream>
 #include <vector>
 
 /**
@@ -170,7 +169,7 @@ public:
      * @param title The title of the book to search for.
      * @return Pointer to the Book object if found, nullptr if not found.
      */
-    Book* searchBooks(const std::string& title) const;
+    [[nodiscard]] Book* searchBooks(const std::string& title) const;
 
     /**
      * @brief Searches for a book by its ISBN.
@@ -180,7 +179,7 @@ public:
      * @param ISBN The ISBN of the book to search for.
      * @return Pointer to the Book object if found, nullptr if not found.
      */
-    Book* searchBooks(long long ISBN) const;
+    [[nodiscard]] Book* searchBooks(long long ISBN) const;
 
 private:
     Inventory inventory; ///< The inventory of books in the library.

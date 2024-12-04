@@ -33,7 +33,7 @@ public:
     static int HashBook(const Book* b, int size);
 
     /**
-     * @brief Converts an ISBN number into a hash value.
+     * @brief Converts an ISBN into a hash value.
      *
      * This method converts an ISBN into a hash value that can be used to determine the
      * book's position in the inventory.

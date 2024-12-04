@@ -44,7 +44,7 @@ public:
      *
      * @return The title of the book.
      */
-    const string &getTitle() const;
+    [[nodiscard]] const string &getTitle() const;
 
     /**
      * @brief Set the title of the book.
@@ -58,7 +58,7 @@ public:
      *
      * @return The author of the book.
      */
-    const string &getAuthor() const;
+    [[nodiscard]] const string &getAuthor() const;
 
     /**
      * @brief Set the author of the book.
@@ -72,7 +72,7 @@ public:
      *
      * @return The genre of the book.
      */
-    const string &getGenre() const;
+    [[nodiscard]] const string &getGenre() const;
 
     /**
      * @brief Set the genre of the book.
@@ -86,7 +86,7 @@ public:
      *
      * @return The publication year of the book.
      */
-    short getPublicationYear() const;
+    [[nodiscard]] short getPublicationYear() const;
 
     /**
      * @brief Set the publication year of the book.
@@ -100,7 +100,7 @@ public:
      *
      * @return The ISBN of the book.
      */
-    long long getIsbn() const;
+    [[nodiscard]] long long getIsbn() const;
 
     /**
      * @brief Set the ISBN of the book.
@@ -114,7 +114,7 @@ public:
      *
      * @return true if the book is available, false otherwise.
      */
-    bool isAvailable() const;
+    [[nodiscard]] bool isAvailable() const;
 
     /**
      * @brief Set the availability of the book.
@@ -144,14 +144,14 @@ public:
      *
      * @return A string containing the book's title, author, genre, ISBN, publication year, availability status, fines, and days checked out.
      */
-    string getInfo() const;
+    [[nodiscard]] string getInfo() const;
 
     /**
      * @brief Get the fine associated with the book.
      *
      * @return The fine amount for the book.
      */
-    int getFine() const;
+    [[nodiscard]] int getFine() const;
 
     /**
      * @brief Set the fine associated with the book.
@@ -165,7 +165,7 @@ public:
      *
      * @return The number of days the book has been checked out.
      */
-    int getDaysCheckedOut() const;
+    [[nodiscard]] int getDaysCheckedOut() const;
 
     /**
      * @brief Set the number of days the book has been checked out.

@@ -1,0 +1,6 @@
+<map id="Inventory::isBookAvailable" name="Inventory::isBookAvailable">
+<area shape="rect" id="Node000001" title="Checks if a book is available in the inventory by its ISBN." alt="" coords="5,29,182,55"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="57,31,50,21,54,11,69,5,94,3,120,5,134,12,132,17,119,10,93,8,70,10,58,15,55,20,61,27"/>
+<area shape="rect" id="Node000002" href="$class_library_hash.html#ad2acb659002f67880f9b07abc11fc175" title="Formats an ISBN string to a long long integer." alt="" coords="230,29,398,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,40,214,40,214,45,182,45"/>
+</map>

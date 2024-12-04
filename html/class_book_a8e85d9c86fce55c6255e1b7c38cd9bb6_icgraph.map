@@ -1,0 +1,11 @@
+<map id="Book::getInfo" name="Book::getInfo">
+<area shape="rect" id="Node000001" title="Get detailed information about the book." alt="" coords="422,78,521,104"/>
+<area shape="rect" id="Node000002" href="$class_inventory.html#a96986c20ab24d02ec240d49f2b973ff9" title="Lists all available books in the inventory." alt="" coords="211,5,364,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="418,75,346,49,348,44,420,70"/>
+<area shape="rect" id="Node000003" href="$class_inventory.html#a3a09ed76cde8fb7f61f3f19f832cfad1" title="Lists all checked&#45;out books in the inventory." alt="" coords="201,71,374,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="406,94,375,94,375,88,406,88"/>
+<area shape="rect" id="Node000004" href="$class_inventory.html#af74a3e1cb0c49a8f3481faf139154cce" title="Prints all books in the inventory along with their index." alt="" coords="233,136,342,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="417,112,375,126,336,137,334,132,373,120,416,107"/>
+<area shape="rect" id="Node000005" href="$class_librarian.html#ae15bb45f8ded3ca0a17dc7e61b4c47f0" title="Lists all books in the inventory." alt="" coords="5,136,153,161"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="217,151,153,151,153,146,217,146"/>
+</map>

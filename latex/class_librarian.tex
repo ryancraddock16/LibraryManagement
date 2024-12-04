@@ -1,0 +1,536 @@
+\doxysection{Librarian Class Reference}
+\hypertarget{class_librarian}{}\label{class_librarian}\index{Librarian@{Librarian}}
+
+
+Manages the library\textquotesingle{}s book inventory, checkout system, reservations, and overdue books.  
+
+
+
+
+{\ttfamily \#include $<$Librarian.\+h$>$}
+
+
+
+Collaboration diagram for Librarian\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_librarian__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_librarian_a8550e8f5250c49ff3b421e0fdc445d1f}{Librarian}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_librarian}{Librarian}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_librarian_a07ce913f789f7c21f36dad2e7d2f9024}{checkout\+Book}} (long long ISBN)
+\begin{DoxyCompactList}\small\item\em Checks out a book by its ISBN. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_librarian_a05ad7a14d264cf4d931b59380f2c5bd7}{checkout\+Book}} (\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}b, long long ISBN)
+\begin{DoxyCompactList}\small\item\em Checks out a book object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_librarian_a19dbcc897ae6bfc59835b8feaac035f0}{return\+Book}} (long long ISBN)
+\begin{DoxyCompactList}\small\item\em Returns a book by its ISBN. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_librarian_a34ef7080595ab5a8d92c94c436869178}{return\+Book}} (\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}book)
+\begin{DoxyCompactList}\small\item\em Returns a checked-\/out book to the inventory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_librarian_ae18939f8e8972d327a532a7f77a73be6}{reserve\+Book}} (long long ISBN)
+\begin{DoxyCompactList}\small\item\em Reserves a book by its ISBN. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_librarian_aff1edfd3d82904f32da3ca11c1c0ec26}{cancel\+Reservation}} (long long ISBN)
+\begin{DoxyCompactList}\small\item\em Cancels the reservation for a book by its ISBN. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_librarian_a5293bfa1e0684997575d42d33d0d412e}{process\+Reservations}} ()
+\begin{DoxyCompactList}\small\item\em Processes all reservations for books. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_librarian_ac7b8643a53c31045baffad6bcd29d03e}{renew\+Book}} (long long ISBN, int days) const
+\begin{DoxyCompactList}\small\item\em Renews a book by extending its checkout period. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_librarian_a20f8e6e4f611d948d3d1c4148cca3e9d}{process\+Overdue\+Books}} (int days) const
+\begin{DoxyCompactList}\small\item\em Processes overdue books and calculates fines. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_librarian_a588ca566f3b696459fb451bcce4f8b60}{calculate\+Fine}} (\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}book) const
+\begin{DoxyCompactList}\small\item\em Calculates the fine for a book based on how many days it is overdue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_librarian_ac9480777425028ba596f93ea58c5ebf4}{add\+New\+Book}} (\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}book) const
+\begin{DoxyCompactList}\small\item\em Adds a new book to the inventory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_librarian_a3d535828d4b603e12b2751c61cdd191c}{remove\+Book\+From\+Inventory}} (\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}book) const
+\begin{DoxyCompactList}\small\item\em Removes a book from the inventory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_librarian_ae15bb45f8ded3ca0a17dc7e61b4c47f0}{list\+All\+Books}} () const
+\begin{DoxyCompactList}\small\item\em Lists all books in the inventory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_librarian_ad5fdb6f181eaf72dc05337a070149820}{list\+Overdue\+Books}} () const
+\begin{DoxyCompactList}\small\item\em Lists all overdue books. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_librarian_ae9782e242f5cee750813ee4b680687d0}{list\+Reservations}} () const
+\begin{DoxyCompactList}\small\item\em Lists all book reservations. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_librarian_af064e2f38090db23b7ca2c45c79754f1}{search\+Books}} (const std\+::string \&title) const
+\begin{DoxyCompactList}\small\item\em Searches for a book by its title. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_librarian_a474812f3e984c3871dd9fb50516db324}{search\+Books}} (long long ISBN) const
+\begin{DoxyCompactList}\small\item\em Searches for a book by its ISBN. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_librarian_a18ce88b446b814b868585023293f8e2e}\label{class_librarian_a18ce88b446b814b868585023293f8e2e} 
+\mbox{\hyperlink{class_inventory}{Inventory}} {\bfseries inventory}
+\begin{DoxyCompactList}\small\item\em The inventory of books in the library. \end{DoxyCompactList}\item 
+\Hypertarget{class_librarian_a84487289418cf7f6a32d8063cb8b5a51}\label{class_librarian_a84487289418cf7f6a32d8063cb8b5a51} 
+std\+::vector$<$ \mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries reservations}
+\begin{DoxyCompactList}\small\item\em List of books that are reserved. \end{DoxyCompactList}\item 
+\Hypertarget{class_librarian_a81ea3557247538ad19b69e148b1f15c1}\label{class_librarian_a81ea3557247538ad19b69e148b1f15c1} 
+std\+::vector$<$ \mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries check\+Out}
+\begin{DoxyCompactList}\small\item\em List of books that are checked out. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the library\textquotesingle{}s book inventory, checkout system, reservations, and overdue books. 
+
+The {\ttfamily \doxylink{class_librarian}{Librarian}} class provides functionality for managing books in a library system. It handles checking out books, returning them, managing reservations, processing overdue books, and calculating fines. It also allows searching, adding, and removing books from the library\textquotesingle{}s inventory. The class tracks the availability of books and ensures that books are properly checked out or reserved. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_librarian_a8550e8f5250c49ff3b421e0fdc445d1f}\index{Librarian@{Librarian}!Librarian@{Librarian}}
+\index{Librarian@{Librarian}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{Librarian()}{Librarian()}}
+{\footnotesize\ttfamily \label{class_librarian_a8550e8f5250c49ff3b421e0fdc445d1f} 
+Librarian\+::\+Librarian (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor for \doxylink{class_librarian}{Librarian}. 
+
+Initializes the check\+Out vector and loads the book inventory from a CSV file. It populates the {\ttfamily inventory} with \doxylink{class_book}{Book} objects and also tracks the books that are checked out.
+
+Initializes the check\+Out vector and loads the book inventory from a CSV file. It populates the {\ttfamily inventory} with \doxylink{class_book}{Book} objects, and also tracks the books that are checked out. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_a8550e8f5250c49ff3b421e0fdc445d1f_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_librarian_ac9480777425028ba596f93ea58c5ebf4}\index{Librarian@{Librarian}!addNewBook@{addNewBook}}
+\index{addNewBook@{addNewBook}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{addNewBook()}{addNewBook()}}
+{\footnotesize\ttfamily \label{class_librarian_ac9480777425028ba596f93ea58c5ebf4} 
+void Librarian\+::add\+New\+Book (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}}]{book}{}\end{DoxyParamCaption}) const}
+
+
+
+Adds a new book to the inventory. 
+
+Adds the given book to the inventory and updates the book\textquotesingle{}s availability.
+
+
+\begin{DoxyParams}{Parameters}
+{\em book} & Pointer to the \doxylink{class_book}{Book} object to add. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_ac9480777425028ba596f93ea58c5ebf4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_librarian_a588ca566f3b696459fb451bcce4f8b60}\index{Librarian@{Librarian}!calculateFine@{calculateFine}}
+\index{calculateFine@{calculateFine}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{calculateFine()}{calculateFine()}}
+{\footnotesize\ttfamily \label{class_librarian_a588ca566f3b696459fb451bcce4f8b60} 
+void Librarian\+::calculate\+Fine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}}]{book}{}\end{DoxyParamCaption}) const}
+
+
+
+Calculates the fine for a book based on how many days it is overdue. 
+
+If the book is overdue, it calculates the fine by multiplying the negative number of days by 10.
+
+
+\begin{DoxyParams}{Parameters}
+{\em book} & Pointer to the \doxylink{class_book}{Book} object for which to calculate the fine. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_a588ca566f3b696459fb451bcce4f8b60_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_librarian_aff1edfd3d82904f32da3ca11c1c0ec26}\index{Librarian@{Librarian}!cancelReservation@{cancelReservation}}
+\index{cancelReservation@{cancelReservation}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{cancelReservation()}{cancelReservation()}}
+{\footnotesize\ttfamily \label{class_librarian_aff1edfd3d82904f32da3ca11c1c0ec26} 
+void Librarian\+::cancel\+Reservation (\begin{DoxyParamCaption}\item[{long long}]{ISBN}{}\end{DoxyParamCaption})}
+
+
+
+Cancels the reservation for a book by its ISBN. 
+
+Removes the book from the reservation list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ISBN} & The ISBN of the book whose reservation to cancel. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_librarian_a05ad7a14d264cf4d931b59380f2c5bd7}\index{Librarian@{Librarian}!checkoutBook@{checkoutBook}}
+\index{checkoutBook@{checkoutBook}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{checkoutBook()}{checkoutBook()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_librarian_a05ad7a14d264cf4d931b59380f2c5bd7} 
+\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} Librarian\+::checkout\+Book (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}}]{b}{, }\item[{long long}]{ISBN}{}\end{DoxyParamCaption})}
+
+
+
+Checks out a book object. 
+
+Sets the book\textquotesingle{}s availability to false, adds it to the {\ttfamily check\+Out} list, and sets the number of days checked out. If the book is already checked out, it reserves the book instead.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & Pointer to the \doxylink{class_book}{Book} object to check out. \\
+\hline
+{\em ISBN} & ISBN of the book to check out. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the checked-\/out book, or nullptr if the book is reserved instead.
+\end{DoxyReturn}
+Sets the book\textquotesingle{}s availability to false, adds it to the {\ttfamily check\+Out} list, and sets the number of days checked out. If the book is already checked out, it reserves the book instead.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & Pointer to the \doxylink{class_book}{Book} object to check out. \\
+\hline
+{\em ISBN} & ISBN of the book to check out. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the checked out book, or nullptr if the book is reserved instead. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_a05ad7a14d264cf4d931b59380f2c5bd7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_librarian_a07ce913f789f7c21f36dad2e7d2f9024}\index{Librarian@{Librarian}!checkoutBook@{checkoutBook}}
+\index{checkoutBook@{checkoutBook}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{checkoutBook()}{checkoutBook()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_librarian_a07ce913f789f7c21f36dad2e7d2f9024} 
+\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} Librarian\+::checkout\+Book (\begin{DoxyParamCaption}\item[{long long}]{ISBN}{}\end{DoxyParamCaption})}
+
+
+
+Checks out a book by its ISBN. 
+
+Sets the book\textquotesingle{}s availability to false, adds it to the {\ttfamily check\+Out} list, and sets the number of days checked out. If the book is already checked out, it reserves the book instead.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ISBN} & The ISBN of the book to check out. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the checked-\/out book, or nullptr if the book is reserved instead.
+\end{DoxyReturn}
+Sets the book\textquotesingle{}s availability to false, adds it to the {\ttfamily check\+Out} list, and sets the number of days checked out. If the book is already checked out, it reserves the book instead.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ISBN} & The ISBN of the book to check out. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the checked out book, or nullptr if the book is reserved instead. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_a07ce913f789f7c21f36dad2e7d2f9024_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_a07ce913f789f7c21f36dad2e7d2f9024_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_librarian_ae15bb45f8ded3ca0a17dc7e61b4c47f0}\index{Librarian@{Librarian}!listAllBooks@{listAllBooks}}
+\index{listAllBooks@{listAllBooks}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{listAllBooks()}{listAllBooks()}}
+{\footnotesize\ttfamily \label{class_librarian_ae15bb45f8ded3ca0a17dc7e61b4c47f0} 
+void Librarian\+::list\+All\+Books (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Lists all books in the inventory. 
+
+Prints all books in the inventory to the console. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_ae15bb45f8ded3ca0a17dc7e61b4c47f0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_librarian_ad5fdb6f181eaf72dc05337a070149820}\index{Librarian@{Librarian}!listOverdueBooks@{listOverdueBooks}}
+\index{listOverdueBooks@{listOverdueBooks}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{listOverdueBooks()}{listOverdueBooks()}}
+{\footnotesize\ttfamily \label{class_librarian_ad5fdb6f181eaf72dc05337a070149820} 
+void Librarian\+::list\+Overdue\+Books (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Lists all overdue books. 
+
+Prints information about books that are overdue. \Hypertarget{class_librarian_ae9782e242f5cee750813ee4b680687d0}\index{Librarian@{Librarian}!listReservations@{listReservations}}
+\index{listReservations@{listReservations}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{listReservations()}{listReservations()}}
+{\footnotesize\ttfamily \label{class_librarian_ae9782e242f5cee750813ee4b680687d0} 
+void Librarian\+::list\+Reservations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Lists all book reservations. 
+
+Prints information about books that are currently reserved. \Hypertarget{class_librarian_a20f8e6e4f611d948d3d1c4148cca3e9d}\index{Librarian@{Librarian}!processOverdueBooks@{processOverdueBooks}}
+\index{processOverdueBooks@{processOverdueBooks}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{processOverdueBooks()}{processOverdueBooks()}}
+{\footnotesize\ttfamily \label{class_librarian_a20f8e6e4f611d948d3d1c4148cca3e9d} 
+void Librarian\+::process\+Overdue\+Books (\begin{DoxyParamCaption}\item[{int}]{days}{}\end{DoxyParamCaption}) const}
+
+
+
+Processes overdue books and calculates fines. 
+
+Reduces the number of days checked out for each book and calculates any fines for overdue books.
+
+
+\begin{DoxyParams}{Parameters}
+{\em days} & The number of days the overdue books are behind. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_a20f8e6e4f611d948d3d1c4148cca3e9d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_librarian_a5293bfa1e0684997575d42d33d0d412e}\index{Librarian@{Librarian}!processReservations@{processReservations}}
+\index{processReservations@{processReservations}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{processReservations()}{processReservations()}}
+{\footnotesize\ttfamily \label{class_librarian_a5293bfa1e0684997575d42d33d0d412e} 
+void Librarian\+::process\+Reservations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes all reservations for books. 
+
+Checks out any reserved books that are now available. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_a5293bfa1e0684997575d42d33d0d412e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_a5293bfa1e0684997575d42d33d0d412e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_librarian_a3d535828d4b603e12b2751c61cdd191c}\index{Librarian@{Librarian}!removeBookFromInventory@{removeBookFromInventory}}
+\index{removeBookFromInventory@{removeBookFromInventory}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{removeBookFromInventory()}{removeBookFromInventory()}}
+{\footnotesize\ttfamily \label{class_librarian_a3d535828d4b603e12b2751c61cdd191c} 
+void Librarian\+::remove\+Book\+From\+Inventory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}}]{book}{}\end{DoxyParamCaption}) const}
+
+
+
+Removes a book from the inventory. 
+
+Removes the given book from the inventory.
+
+
+\begin{DoxyParams}{Parameters}
+{\em book} & Pointer to the \doxylink{class_book}{Book} object to remove. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_a3d535828d4b603e12b2751c61cdd191c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_librarian_ac7b8643a53c31045baffad6bcd29d03e}\index{Librarian@{Librarian}!renewBook@{renewBook}}
+\index{renewBook@{renewBook}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{renewBook()}{renewBook()}}
+{\footnotesize\ttfamily \label{class_librarian_ac7b8643a53c31045baffad6bcd29d03e} 
+void Librarian\+::renew\+Book (\begin{DoxyParamCaption}\item[{long long}]{ISBN}{, }\item[{int}]{days}{}\end{DoxyParamCaption}) const}
+
+
+
+Renews a book by extending its checkout period. 
+
+Updates the number of days the book has been checked out.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ISBN} & The ISBN of the book to renew. \\
+\hline
+{\em days} & The number of days to extend the checkout period. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_ac7b8643a53c31045baffad6bcd29d03e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_librarian_ae18939f8e8972d327a532a7f77a73be6}\index{Librarian@{Librarian}!reserveBook@{reserveBook}}
+\index{reserveBook@{reserveBook}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{reserveBook()}{reserveBook()}}
+{\footnotesize\ttfamily \label{class_librarian_ae18939f8e8972d327a532a7f77a73be6} 
+void Librarian\+::reserve\+Book (\begin{DoxyParamCaption}\item[{long long}]{ISBN}{}\end{DoxyParamCaption})}
+
+
+
+Reserves a book by its ISBN. 
+
+Adds the book to the reservation list if it is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ISBN} & The ISBN of the book to reserve. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_ae18939f8e8972d327a532a7f77a73be6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_ae18939f8e8972d327a532a7f77a73be6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_librarian_a34ef7080595ab5a8d92c94c436869178}\index{Librarian@{Librarian}!returnBook@{returnBook}}
+\index{returnBook@{returnBook}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{returnBook()}{returnBook()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_librarian_a34ef7080595ab5a8d92c94c436869178} 
+void Librarian\+::return\+Book (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}}]{book}{}\end{DoxyParamCaption})}
+
+
+
+Returns a checked-\/out book to the inventory. 
+
+Sets the book\textquotesingle{}s availability to true and processes any reservations for the book.
+
+
+\begin{DoxyParams}{Parameters}
+{\em book} & Pointer to the \doxylink{class_book}{Book} object to return. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_a34ef7080595ab5a8d92c94c436869178_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_librarian_a19dbcc897ae6bfc59835b8feaac035f0}\index{Librarian@{Librarian}!returnBook@{returnBook}}
+\index{returnBook@{returnBook}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{returnBook()}{returnBook()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_librarian_a19dbcc897ae6bfc59835b8feaac035f0} 
+void Librarian\+::return\+Book (\begin{DoxyParamCaption}\item[{long long}]{ISBN}{}\end{DoxyParamCaption})}
+
+
+
+Returns a book by its ISBN. 
+
+Finds the book in the inventory by ISBN and returns it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ISBN} & The ISBN of the book to return. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_librarian_a19dbcc897ae6bfc59835b8feaac035f0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_librarian_a19dbcc897ae6bfc59835b8feaac035f0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_librarian_af064e2f38090db23b7ca2c45c79754f1}\index{Librarian@{Librarian}!searchBooks@{searchBooks}}
+\index{searchBooks@{searchBooks}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{searchBooks()}{searchBooks()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_librarian_af064e2f38090db23b7ca2c45c79754f1} 
+\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} Librarian\+::search\+Books (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title}{}\end{DoxyParamCaption}) const}
+
+
+
+Searches for a book by its title. 
+
+Searches the inventory for a book with the specified title.
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the book to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the \doxylink{class_book}{Book} object if found, nullptr if not found. 
+\end{DoxyReturn}
+\Hypertarget{class_librarian_a474812f3e984c3871dd9fb50516db324}\index{Librarian@{Librarian}!searchBooks@{searchBooks}}
+\index{searchBooks@{searchBooks}!Librarian@{Librarian}}
+\doxysubsubsection{\texorpdfstring{searchBooks()}{searchBooks()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_librarian_a474812f3e984c3871dd9fb50516db324} 
+\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} Librarian\+::search\+Books (\begin{DoxyParamCaption}\item[{long long}]{ISBN}{}\end{DoxyParamCaption}) const}
+
+
+
+Searches for a book by its ISBN. 
+
+Searches the inventory for a book with the specified ISBN.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ISBN} & The ISBN of the book to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the \doxylink{class_book}{Book} object if found, nullptr if not found. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Librarian.\+h\item 
+Librarian.\+cpp\end{DoxyCompactItemize}

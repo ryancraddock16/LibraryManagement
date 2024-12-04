@@ -1,0 +1,5 @@
+<map id="Book::setIsAvailable" name="Book::setIsAvailable">
+<area shape="rect" id="Node000001" title="Set the availability of the book." alt="" coords="5,5,147,31"/>
+<area shape="rect" id="Node000002" href="$class_book.html#ac4292948dfd94bcaa0862d009cf32358" title="Check if the book is available." alt="" coords="195,5,317,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,16,179,16,179,21,147,21"/>
+</map>

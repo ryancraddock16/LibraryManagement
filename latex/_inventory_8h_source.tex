@@ -1,0 +1,56 @@
+\doxysection{Inventory.\+h}
+\hypertarget{_inventory_8h_source}{}\label{_inventory_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Joseph\ Campione\ on\ 11/22/24.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ LIBRARYMANAGEMENT\_INVENTORY\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ LIBRARYMANAGEMENT\_INVENTORY\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Book.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}LibraryHash.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_inventory}{Inventory}}\ \{}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_inventory_a10485613fc8bfb32ee564d9b5110f8fb}{Inventory}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inventory_a6b6ddeaf437fa4cbfbed9284561b0f7e}{size}});}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_inventory_a10485613fc8bfb32ee564d9b5110f8fb}{Inventory}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_inventory_a6c6dfcb6d977c74a7abf46809e892e3d}{\string~Inventory}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inventory_a7ec8050eb3e747fc2ca9dc36996f2ed5}{addBook}}(\mbox{\hyperlink{class_book}{Book}}*\ b)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inventory_a75431d03b667d5b1e638bb8f49618064}{removeBook}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_book}{Book}}*\ b)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{class_book}{Book}}*\ \mbox{\hyperlink{class_inventory_ada91a7f2af4b098541ec890661929bbd}{findBookByISBN}}(\textcolor{keywordtype}{string}\ ISBN)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_inventory_a6eb368aabfc9ae9dac27601766202ced}{isBookAvailable}}(\textcolor{keywordtype}{string}\ ISBN)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inventory_a96986c20ab24d02ec240d49f2b973ff9}{listAvailableBooks}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inventory_a3a09ed76cde8fb7f61f3f19f832cfad1}{listCheckedOutBooks}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_inventory_a08062b3b0ca5ae18e1e3db16d2b4c6f2}{updateBookAvailablity}}(\mbox{\hyperlink{class_book}{Book}}*\ b)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_inventory_a71dfd396d55aaed7dbceab35a196ae08}{countTotalBooks}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inventory_af74a3e1cb0c49a8f3481faf139154cce}{print}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_inventory_a6eb368aabfc9ae9dac27601766202ced}{isBookAvailable}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{int}\ ISBN)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00138\ \ \ \ \ \mbox{\hyperlink{class_book}{Book}}*\ \mbox{\hyperlink{class_inventory_ada91a7f2af4b098541ec890661929bbd}{findBookByISBN}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{int}\ ISBN)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00148\ \ \ \ \ \mbox{\hyperlink{class_book}{Book}}*\ \mbox{\hyperlink{class_inventory_a5f561d4558a86c533697fda4af789a82}{findBookByTitle}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ title)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00151\ \ \ \ \ \mbox{\hyperlink{class_book}{Book}}**\ \mbox{\hyperlink{class_inventory_a840b687b7759fdffe5391291c9be53f0}{books}};\ }
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inventory_a6b6ddeaf437fa4cbfbed9284561b0f7e}{size}};\ }
+\DoxyCodeLine{00153\ \};}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//LIBRARYMANAGEMENT\_INVENTORY\_H}}
+
+\end{DoxyCode}

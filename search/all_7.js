@@ -5,5 +5,5 @@ var searchData=
   ['isavailable_2',['isAvailable',['../classBook.html#ac4292948dfd94bcaa0862d009cf32358',1,'Book']]],
   ['isbn_3',['ISBN',['../classBook.html#a0edc58003d97d8f1305841017f0487be',1,'Book']]],
   ['isbntohash_4',['ISBNToHash',['../classLibraryHash.html#a40f0272e979a0a3b9493d94628947e78',1,'LibraryHash']]],
-  ['isbookavailable_5',['isBookAvailable',['../classInventory.html#a6eb368aabfc9ae9dac27601766202ced',1,'Inventory::isBookAvailable(string ISBN) const'],['../classInventory.html#a789746b6486d6ed6123929ead9bb5f84',1,'Inventory::isBookAvailable(const long long int ISBN) const']]]
+  ['isbookavailable_5',['isBookAvailable',['../classInventory.html#a6eb368aabfc9ae9dac27601766202ced',1,'Inventory::isBookAvailable(string ISBN) const'],['../classInventory.html#a5e6448a98c4211580ae463a25ec984fc',1,'Inventory::isBookAvailable(long long int ISBN) const']]]
 ];

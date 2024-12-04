@@ -6,7 +6,7 @@
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="681,86,625,79,626,74,682,80"/>
 <area shape="rect" id="Node000005" href="$classLibrarian.html#a34ef7080595ab5a8d92c94c436869178" title="Returns a checked&#45;out book to the inventory." alt="" coords="5,80,146,106"/>
 <area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="682,96,146,96,146,90,682,90"/>
-<area shape="rect" id="Node000006" href="$classInventory.html#a08062b3b0ca5ae18e1e3db16d2b4c6f2" title="Updates the availability status of a book." alt="" coords="441,156,649,182"/>
+<area shape="rect" id="Node000006" href="$classInventory.html#ab9a6f625ba8ba29b847061f3ae45e9c0" title="Updates the availability status of a book." alt="" coords="441,156,649,182"/>
 <area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="719,114,650,139,593,158,591,153,648,134,717,109"/>
 <area shape="rect" id="Node000004" href="$classLibrarian.html#a5293bfa1e0684997575d42d33d0d412e" title="Processes all reservations for books." alt="" coords="194,55,393,80"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="449,70,393,70,393,65,449,65"/>

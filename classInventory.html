@@ -86,6 +86,7 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classInventory-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Inventory Class Reference</div></div>
@@ -138,24 +139,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a09ed76cde8fb7f61f3f19f832cfad1" id="r_a3a09ed76cde8fb7f61f3f19f832cfad1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a09ed76cde8fb7f61f3f19f832cfad1">listCheckedOutBooks</a> () const</td></tr>
 <tr class="memdesc:a3a09ed76cde8fb7f61f3f19f832cfad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists all checked-out books in the inventory.  <br /></td></tr>
 <tr class="separator:a3a09ed76cde8fb7f61f3f19f832cfad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08062b3b0ca5ae18e1e3db16d2b4c6f2" id="r_a08062b3b0ca5ae18e1e3db16d2b4c6f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08062b3b0ca5ae18e1e3db16d2b4c6f2">updateBookAvailablity</a> (<a class="el" href="classBook.html">Book</a> *b) const</td></tr>
-<tr class="memdesc:a08062b3b0ca5ae18e1e3db16d2b4c6f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the availability status of a book.  <br /></td></tr>
-<tr class="separator:a08062b3b0ca5ae18e1e3db16d2b4c6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71dfd396d55aaed7dbceab35a196ae08" id="r_a71dfd396d55aaed7dbceab35a196ae08"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71dfd396d55aaed7dbceab35a196ae08">countTotalBooks</a> () const</td></tr>
 <tr class="memdesc:a71dfd396d55aaed7dbceab35a196ae08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the total number of books in the inventory.  <br /></td></tr>
 <tr class="separator:a71dfd396d55aaed7dbceab35a196ae08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af74a3e1cb0c49a8f3481faf139154cce" id="r_af74a3e1cb0c49a8f3481faf139154cce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af74a3e1cb0c49a8f3481faf139154cce">print</a> () const</td></tr>
 <tr class="memdesc:af74a3e1cb0c49a8f3481faf139154cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all books in the inventory along with their index.  <br /></td></tr>
 <tr class="separator:af74a3e1cb0c49a8f3481faf139154cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a789746b6486d6ed6123929ead9bb5f84" id="r_a789746b6486d6ed6123929ead9bb5f84"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a789746b6486d6ed6123929ead9bb5f84">isBookAvailable</a> (const long long int ISBN) const</td></tr>
-<tr class="memdesc:a789746b6486d6ed6123929ead9bb5f84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a book is available by its ISBN.  <br /></td></tr>
-<tr class="separator:a789746b6486d6ed6123929ead9bb5f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4d4ade7dafc1f7a1845da96a96b0447" id="r_ab4d4ade7dafc1f7a1845da96a96b0447"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBook.html">Book</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4d4ade7dafc1f7a1845da96a96b0447">findBookByISBN</a> (const long long int ISBN) const</td></tr>
-<tr class="memdesc:ab4d4ade7dafc1f7a1845da96a96b0447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a book in the inventory by its ISBN.  <br /></td></tr>
-<tr class="separator:ab4d4ade7dafc1f7a1845da96a96b0447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e6448a98c4211580ae463a25ec984fc" id="r_a5e6448a98c4211580ae463a25ec984fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e6448a98c4211580ae463a25ec984fc">isBookAvailable</a> (long long int ISBN) const</td></tr>
+<tr class="memdesc:a5e6448a98c4211580ae463a25ec984fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a book is available by its ISBN.  <br /></td></tr>
+<tr class="separator:a5e6448a98c4211580ae463a25ec984fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e2fd9f4b8abe7f2ca08f0ab32dadfc0" id="r_a8e2fd9f4b8abe7f2ca08f0ab32dadfc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBook.html">Book</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e2fd9f4b8abe7f2ca08f0ab32dadfc0">findBookByISBN</a> (long long int ISBN) const</td></tr>
+<tr class="memdesc:a8e2fd9f4b8abe7f2ca08f0ab32dadfc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a book in the inventory by its ISBN.  <br /></td></tr>
+<tr class="separator:a8e2fd9f4b8abe7f2ca08f0ab32dadfc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f561d4558a86c533697fda4af789a82" id="r_a5f561d4558a86c533697fda4af789a82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBook.html">Book</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f561d4558a86c533697fda4af789a82">findBookByTitle</a> (const string &amp;title) const</td></tr>
 <tr class="memdesc:a5f561d4558a86c533697fda4af789a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a book in the inventory by its title.  <br /></td></tr>
 <tr class="separator:a5f561d4558a86c533697fda4af789a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab9a6f625ba8ba29b847061f3ae45e9c0" id="r_ab9a6f625ba8ba29b847061f3ae45e9c0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9a6f625ba8ba29b847061f3ae45e9c0">updateBookAvailablity</a> (<a class="el" href="classBook.html">Book</a> *b)</td></tr>
+<tr class="memdesc:ab9a6f625ba8ba29b847061f3ae45e9c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the availability status of a book.  <br /></td></tr>
+<tr class="separator:ab9a6f625ba8ba29b847061f3ae45e9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -277,8 +281,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ab4d4ade7dafc1f7a1845da96a96b0447" name="ab4d4ade7dafc1f7a1845da96a96b0447"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4d4ade7dafc1f7a1845da96a96b0447">&#9670;&#160;</a></span>findBookByISBN() <span class="overload">[1/2]</span></h2>
+<a id="a8e2fd9f4b8abe7f2ca08f0ab32dadfc0" name="a8e2fd9f4b8abe7f2ca08f0ab32dadfc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2fd9f4b8abe7f2ca08f0ab32dadfc0">&#9670;&#160;</a></span>findBookByISBN() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,7 +290,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname"><a class="el" href="classBook.html">Book</a> * Inventory::findBookByISBN </td>
           <td>(</td>
-          <td class="paramtype">const long long int</td>          <td class="paramname"><span class="paramname"><em>ISBN</em></span></td><td>)</td>
+          <td class="paramtype">long long int</td>          <td class="paramname"><span class="paramname"><em>ISBN</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -304,8 +308,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classInventory_ab4d4ade7dafc1f7a1845da96a96b0447_cgraph.png" border="0" usemap="#aclassInventory_ab4d4ade7dafc1f7a1845da96a96b0447_cgraph" alt=""/></div>
-<map name="aclassInventory_ab4d4ade7dafc1f7a1845da96a96b0447_cgraph" id="aclassInventory_ab4d4ade7dafc1f7a1845da96a96b0447_cgraph">
+<div class="center"><img src="classInventory_a8e2fd9f4b8abe7f2ca08f0ab32dadfc0_cgraph.png" border="0" usemap="#aclassInventory_a8e2fd9f4b8abe7f2ca08f0ab32dadfc0_cgraph" alt=""/></div>
+<map name="aclassInventory_a8e2fd9f4b8abe7f2ca08f0ab32dadfc0_cgraph" id="aclassInventory_a8e2fd9f4b8abe7f2ca08f0ab32dadfc0_cgraph">
 <area shape="rect" title="Finds a book in the inventory by its ISBN." alt="" coords="5,5,183,31"/>
 <area shape="rect" href="classLibraryHash.html#a40f0272e979a0a3b9493d94628947e78" title="Converts an ISBN number into a hash value." alt="" coords="231,5,406,31"/>
 <area shape="poly" title=" " alt="" coords="183,16,215,16,215,21,183,21"/>
@@ -404,8 +408,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a789746b6486d6ed6123929ead9bb5f84" name="a789746b6486d6ed6123929ead9bb5f84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a789746b6486d6ed6123929ead9bb5f84">&#9670;&#160;</a></span>isBookAvailable() <span class="overload">[1/2]</span></h2>
+<a id="a5e6448a98c4211580ae463a25ec984fc" name="a5e6448a98c4211580ae463a25ec984fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e6448a98c4211580ae463a25ec984fc">&#9670;&#160;</a></span>isBookAvailable() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -413,7 +417,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool Inventory::isBookAvailable </td>
           <td>(</td>
-          <td class="paramtype">const long long int</td>          <td class="paramname"><span class="paramname"><em>ISBN</em></span></td><td>)</td>
+          <td class="paramtype">long long int</td>          <td class="paramname"><span class="paramname"><em>ISBN</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -431,8 +435,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classInventory_a789746b6486d6ed6123929ead9bb5f84_cgraph.png" border="0" usemap="#aclassInventory_a789746b6486d6ed6123929ead9bb5f84_cgraph" alt=""/></div>
-<map name="aclassInventory_a789746b6486d6ed6123929ead9bb5f84_cgraph" id="aclassInventory_a789746b6486d6ed6123929ead9bb5f84_cgraph">
+<div class="center"><img src="classInventory_a5e6448a98c4211580ae463a25ec984fc_cgraph.png" border="0" usemap="#aclassInventory_a5e6448a98c4211580ae463a25ec984fc_cgraph" alt=""/></div>
+<map name="aclassInventory_a5e6448a98c4211580ae463a25ec984fc_cgraph" id="aclassInventory_a5e6448a98c4211580ae463a25ec984fc_cgraph">
 <area shape="rect" title="Checks if a book is available by its ISBN." alt="" coords="5,31,179,56"/>
 <area shape="rect" href="classBook.html#ac4292948dfd94bcaa0862d009cf32358" title="Check if the book is available." alt="" coords="254,5,374,31"/>
 <area shape="poly" title=" " alt="" coords="179,31,238,24,239,29,179,36"/>
@@ -638,19 +642,27 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a08062b3b0ca5ae18e1e3db16d2b4c6f2" name="a08062b3b0ca5ae18e1e3db16d2b4c6f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08062b3b0ca5ae18e1e3db16d2b4c6f2">&#9670;&#160;</a></span>updateBookAvailablity()</h2>
+<a id="ab9a6f625ba8ba29b847061f3ae45e9c0" name="ab9a6f625ba8ba29b847061f3ae45e9c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9a6f625ba8ba29b847061f3ae45e9c0">&#9670;&#160;</a></span>updateBookAvailablity()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Inventory::updateBookAvailablity </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classBook.html">Book</a> *</td>          <td class="paramname"><span class="paramname"><em>b</em></span></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Updates the availability status of a book. </p>
@@ -665,8 +677,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classInventory_a08062b3b0ca5ae18e1e3db16d2b4c6f2_cgraph.png" border="0" usemap="#aclassInventory_a08062b3b0ca5ae18e1e3db16d2b4c6f2_cgraph" alt=""/></div>
-<map name="aclassInventory_a08062b3b0ca5ae18e1e3db16d2b4c6f2_cgraph" id="aclassInventory_a08062b3b0ca5ae18e1e3db16d2b4c6f2_cgraph">
+<div class="center"><img src="classInventory_ab9a6f625ba8ba29b847061f3ae45e9c0_cgraph.png" border="0" usemap="#aclassInventory_ab9a6f625ba8ba29b847061f3ae45e9c0_cgraph" alt=""/></div>
+<map name="aclassInventory_ab9a6f625ba8ba29b847061f3ae45e9c0_cgraph" id="aclassInventory_ab9a6f625ba8ba29b847061f3ae45e9c0_cgraph">
 <area shape="rect" title="Updates the availability status of a book." alt="" coords="5,5,214,31"/>
 <area shape="rect" href="classBook.html#ac4292948dfd94bcaa0862d009cf32358" title="Check if the book is available." alt="" coords="449,5,569,31"/>
 <area shape="poly" title=" " alt="" coords="214,16,434,16,434,21,214,21"/>

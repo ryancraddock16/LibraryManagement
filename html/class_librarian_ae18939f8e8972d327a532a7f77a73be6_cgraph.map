@@ -1,8 +1,0 @@
-<map id="Librarian::reserveBook" name="Librarian::reserveBook">
-<area shape="rect" id="Node000001" title="Reserves a book by its ISBN." alt="" coords="5,29,157,55"/>
-<area shape="rect" id="Node000002" href="$class_inventory.html#ada91a7f2af4b098541ec890661929bbd" title="Finds a book in the inventory by its ISBN." alt="" coords="205,29,387,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,40,189,40,189,45,157,45"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="260,31,253,21,257,11,272,5,296,3,322,5,336,12,333,17,321,10,296,8,273,10,261,15,258,20,264,27"/>
-<area shape="rect" id="Node000003" href="$class_library_hash.html#ad2acb659002f67880f9b07abc11fc175" title="Formats an ISBN string to a long long integer." alt="" coords="435,29,603,55"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="388,40,419,40,419,45,388,45"/>
-</map>

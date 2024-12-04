@@ -1,0 +1,7 @@
+<map id="Librarian::listAllBooks" name="Librarian::listAllBooks">
+<area shape="rect" id="Node000001" title="Lists all books in the inventory." alt="" coords="5,5,153,31"/>
+<area shape="rect" id="Node000002" href="$class_inventory.html#af74a3e1cb0c49a8f3481faf139154cce" title="Prints all books in the inventory along with their index." alt="" coords="201,5,309,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,16,185,16,185,21,153,21"/>
+<area shape="rect" id="Node000003" href="$class_book.html#a8e85d9c86fce55c6255e1b7c38cd9bb6" title="Get detailed information about the book." alt="" coords="357,5,456,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="310,16,341,16,341,21,310,21"/>
+</map>

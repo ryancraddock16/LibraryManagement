@@ -1,0 +1,6 @@
+<map id="Inventory::findBookByISBN" name="Inventory::findBookByISBN">
+<area shape="rect" id="Node000001" title="Finds a book in the inventory by its ISBN." alt="" coords="5,29,188,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="59,31,52,21,56,11,72,5,97,3,124,5,138,12,135,17,122,10,96,8,73,10,60,15,57,20,64,27"/>
+<area shape="rect" id="Node000002" href="$class_library_hash.html#ad2acb659002f67880f9b07abc11fc175" title="Formats an ISBN string to a long long integer." alt="" coords="236,29,404,55"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="188,40,220,40,220,45,188,45"/>
+</map>

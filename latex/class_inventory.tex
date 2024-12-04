@@ -1,0 +1,416 @@
+\doxysection{Inventory Class Reference}
+\hypertarget{class_inventory}{}\label{class_inventory}\index{Inventory@{Inventory}}
+
+
+Manages a collection of books within the library\textquotesingle{}s system.  
+
+
+
+
+{\ttfamily \#include $<$Inventory.\+h$>$}
+
+
+
+Collaboration diagram for Inventory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_inventory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_inventory_a732005f1d3059f700447f566a3d8660b}{Inventory}} (int \mbox{\hyperlink{class_inventory_a6b6ddeaf437fa4cbfbed9284561b0f7e}{size}})
+\begin{DoxyCompactList}\small\item\em Constructs an \doxylink{class_inventory}{Inventory} with a specified size. \end{DoxyCompactList}\item 
+\Hypertarget{class_inventory_a10485613fc8bfb32ee564d9b5110f8fb}\label{class_inventory_a10485613fc8bfb32ee564d9b5110f8fb} 
+{\bfseries Inventory} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. Initializes an inventory with a default size of 10000 books. \end{DoxyCompactList}\item 
+\Hypertarget{class_inventory_a6c6dfcb6d977c74a7abf46809e892e3d}\label{class_inventory_a6c6dfcb6d977c74a7abf46809e892e3d} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Inventory} ()
+\begin{DoxyCompactList}\small\item\em Destructor. Frees dynamically allocated memory for the inventory books. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_a7ec8050eb3e747fc2ca9dc36996f2ed5}{add\+Book}} (\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}b) const
+\begin{DoxyCompactList}\small\item\em Adds a book to the inventory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_a75431d03b667d5b1e638bb8f49618064}{remove\+Book}} (const \mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}b) const
+\begin{DoxyCompactList}\small\item\em Removes a book from the inventory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_inventory_ada91a7f2af4b098541ec890661929bbd}{find\+Book\+By\+ISBN}} (string ISBN) const
+\begin{DoxyCompactList}\small\item\em Finds a book in the inventory by its ISBN. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_inventory_a6eb368aabfc9ae9dac27601766202ced}{is\+Book\+Available}} (string ISBN) const
+\begin{DoxyCompactList}\small\item\em Checks if a book is available in the inventory by its ISBN. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_a96986c20ab24d02ec240d49f2b973ff9}{list\+Available\+Books}} () const
+\begin{DoxyCompactList}\small\item\em Lists all available books in the inventory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_a3a09ed76cde8fb7f61f3f19f832cfad1}{list\+Checked\+Out\+Books}} () const
+\begin{DoxyCompactList}\small\item\em Lists all checked-\/out books in the inventory. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_inventory_a08062b3b0ca5ae18e1e3db16d2b4c6f2}{update\+Book\+Availablity}} (\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}b) const
+\begin{DoxyCompactList}\small\item\em Updates the availability status of a book. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_inventory_a71dfd396d55aaed7dbceab35a196ae08}{count\+Total\+Books}} () const
+\begin{DoxyCompactList}\small\item\em Counts the total number of books in the inventory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_af74a3e1cb0c49a8f3481faf139154cce}{print}} () const
+\begin{DoxyCompactList}\small\item\em Prints all books in the inventory along with their index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_inventory_a789746b6486d6ed6123929ead9bb5f84}{is\+Book\+Available}} (const long long int ISBN) const
+\begin{DoxyCompactList}\small\item\em Checks if a book is available by its ISBN. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_inventory_ab4d4ade7dafc1f7a1845da96a96b0447}{find\+Book\+By\+ISBN}} (const long long int ISBN) const
+\begin{DoxyCompactList}\small\item\em Finds a book in the inventory by its ISBN. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_inventory_a5f561d4558a86c533697fda4af789a82}{find\+Book\+By\+Title}} (const string \&title) const
+\begin{DoxyCompactList}\small\item\em Finds a book in the inventory by its title. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_inventory_a840b687b7759fdffe5391291c9be53f0}\label{class_inventory_a840b687b7759fdffe5391291c9be53f0} 
+\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries books}
+\begin{DoxyCompactList}\small\item\em Array of pointers to the books in the inventory. \end{DoxyCompactList}\item 
+\Hypertarget{class_inventory_a6b6ddeaf437fa4cbfbed9284561b0f7e}\label{class_inventory_a6b6ddeaf437fa4cbfbed9284561b0f7e} 
+int {\bfseries size}
+\begin{DoxyCompactList}\small\item\em The size of the inventory array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages a collection of books within the library\textquotesingle{}s system. 
+
+The {\ttfamily \doxylink{class_inventory}{Inventory}} class handles the storage, retrieval, and management of books in a library. It supports operations such as adding, removing, searching for books by title or ISBN, checking availability, listing available or checked-\/out books, and updating book statuses. The inventory uses hashing to store and locate books efficiently. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_inventory_a732005f1d3059f700447f566a3d8660b}\index{Inventory@{Inventory}!Inventory@{Inventory}}
+\index{Inventory@{Inventory}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{Inventory()}{Inventory()}}
+{\footnotesize\ttfamily \label{class_inventory_a732005f1d3059f700447f566a3d8660b} 
+Inventory\+::\+Inventory (\begin{DoxyParamCaption}\item[{int}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs an \doxylink{class_inventory}{Inventory} with a specified size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the inventory (number of books). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inventory_a7ec8050eb3e747fc2ca9dc36996f2ed5}\index{Inventory@{Inventory}!addBook@{addBook}}
+\index{addBook@{addBook}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{addBook()}{addBook()}}
+{\footnotesize\ttfamily \label{class_inventory_a7ec8050eb3e747fc2ca9dc36996f2ed5} 
+void Inventory\+::add\+Book (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}}]{b}{}\end{DoxyParamCaption}) const}
+
+
+
+Adds a book to the inventory. 
+
+Uses the hash function to determine the correct index for storing the book.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & Pointer to the \doxylink{class_book}{Book} object to be added. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_a7ec8050eb3e747fc2ca9dc36996f2ed5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_inventory_a7ec8050eb3e747fc2ca9dc36996f2ed5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventory_a71dfd396d55aaed7dbceab35a196ae08}\index{Inventory@{Inventory}!countTotalBooks@{countTotalBooks}}
+\index{countTotalBooks@{countTotalBooks}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{countTotalBooks()}{countTotalBooks()}}
+{\footnotesize\ttfamily \label{class_inventory_a71dfd396d55aaed7dbceab35a196ae08} 
+long Inventory\+::count\+Total\+Books (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Counts the total number of books in the inventory. 
+
+Iterates through the inventory and counts the number of non-\/null entries.
+
+\begin{DoxyReturn}{Returns}
+The total number of books in the inventory. 
+\end{DoxyReturn}
+\Hypertarget{class_inventory_ab4d4ade7dafc1f7a1845da96a96b0447}\index{Inventory@{Inventory}!findBookByISBN@{findBookByISBN}}
+\index{findBookByISBN@{findBookByISBN}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{findBookByISBN()}{findBookByISBN()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_inventory_ab4d4ade7dafc1f7a1845da96a96b0447} 
+\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} Inventory\+::find\+Book\+By\+ISBN (\begin{DoxyParamCaption}\item[{const long long int}]{ISBN}{}\end{DoxyParamCaption}) const}
+
+
+
+Finds a book in the inventory by its ISBN. 
+
+Uses the ISBN hash to locate and return the book.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ISBN} & The ISBN of the book. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the \doxylink{class_book}{Book} object, or nullptr if not found. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_ab4d4ade7dafc1f7a1845da96a96b0447_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventory_ada91a7f2af4b098541ec890661929bbd}\index{Inventory@{Inventory}!findBookByISBN@{findBookByISBN}}
+\index{findBookByISBN@{findBookByISBN}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{findBookByISBN()}{findBookByISBN()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_inventory_ada91a7f2af4b098541ec890661929bbd} 
+\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} Inventory\+::find\+Book\+By\+ISBN (\begin{DoxyParamCaption}\item[{string}]{ISBN}{}\end{DoxyParamCaption}) const}
+
+
+
+Finds a book in the inventory by its ISBN. 
+
+Converts the ISBN string to a long long value and calls the other version of this function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ISBN} & The ISBN of the book as a string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the \doxylink{class_book}{Book} object, or nullptr if the book is not found. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_ada91a7f2af4b098541ec890661929bbd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_ada91a7f2af4b098541ec890661929bbd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventory_a5f561d4558a86c533697fda4af789a82}\index{Inventory@{Inventory}!findBookByTitle@{findBookByTitle}}
+\index{findBookByTitle@{findBookByTitle}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{findBookByTitle()}{findBookByTitle()}}
+{\footnotesize\ttfamily \label{class_inventory_a5f561d4558a86c533697fda4af789a82} 
+\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*} Inventory\+::find\+Book\+By\+Title (\begin{DoxyParamCaption}\item[{const string \&}]{title}{}\end{DoxyParamCaption}) const}
+
+
+
+Finds a book in the inventory by its title. 
+
+Searches through the inventory to find the first book with a matching title.
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the book. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the \doxylink{class_book}{Book} object, or nullptr if not found. 
+\end{DoxyReturn}
+\Hypertarget{class_inventory_a789746b6486d6ed6123929ead9bb5f84}\index{Inventory@{Inventory}!isBookAvailable@{isBookAvailable}}
+\index{isBookAvailable@{isBookAvailable}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{isBookAvailable()}{isBookAvailable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_inventory_a789746b6486d6ed6123929ead9bb5f84} 
+bool Inventory\+::is\+Book\+Available (\begin{DoxyParamCaption}\item[{const long long int}]{ISBN}{}\end{DoxyParamCaption}) const}
+
+
+
+Checks if a book is available by its ISBN. 
+
+Uses the ISBN hash to locate the book and check its availability.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ISBN} & The ISBN of the book. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the book is available, false otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_a789746b6486d6ed6123929ead9bb5f84_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventory_a6eb368aabfc9ae9dac27601766202ced}\index{Inventory@{Inventory}!isBookAvailable@{isBookAvailable}}
+\index{isBookAvailable@{isBookAvailable}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{isBookAvailable()}{isBookAvailable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_inventory_a6eb368aabfc9ae9dac27601766202ced} 
+bool Inventory\+::is\+Book\+Available (\begin{DoxyParamCaption}\item[{string}]{ISBN}{}\end{DoxyParamCaption}) const}
+
+
+
+Checks if a book is available in the inventory by its ISBN. 
+
+Converts the ISBN string to a long long value and checks availability.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ISBN} & The ISBN of the book as a string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the book is available, false otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_a6eb368aabfc9ae9dac27601766202ced_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{class_inventory_a6eb368aabfc9ae9dac27601766202ced_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventory_a96986c20ab24d02ec240d49f2b973ff9}\index{Inventory@{Inventory}!listAvailableBooks@{listAvailableBooks}}
+\index{listAvailableBooks@{listAvailableBooks}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{listAvailableBooks()}{listAvailableBooks()}}
+{\footnotesize\ttfamily \label{class_inventory_a96986c20ab24d02ec240d49f2b973ff9} 
+void Inventory\+::list\+Available\+Books (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Lists all available books in the inventory. 
+
+Iterates over the inventory and prints information about books that are available. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_inventory_a96986c20ab24d02ec240d49f2b973ff9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventory_a3a09ed76cde8fb7f61f3f19f832cfad1}\index{Inventory@{Inventory}!listCheckedOutBooks@{listCheckedOutBooks}}
+\index{listCheckedOutBooks@{listCheckedOutBooks}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{listCheckedOutBooks()}{listCheckedOutBooks()}}
+{\footnotesize\ttfamily \label{class_inventory_a3a09ed76cde8fb7f61f3f19f832cfad1} 
+void Inventory\+::list\+Checked\+Out\+Books (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Lists all checked-\/out books in the inventory. 
+
+Iterates over the inventory and prints information about books that are not available. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_inventory_a3a09ed76cde8fb7f61f3f19f832cfad1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventory_af74a3e1cb0c49a8f3481faf139154cce}\index{Inventory@{Inventory}!print@{print}}
+\index{print@{print}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_inventory_af74a3e1cb0c49a8f3481faf139154cce} 
+void Inventory\+::print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Prints all books in the inventory along with their index. 
+
+Iterates through the inventory and prints information about each non-\/null book. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{class_inventory_af74a3e1cb0c49a8f3481faf139154cce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_inventory_af74a3e1cb0c49a8f3481faf139154cce_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventory_a75431d03b667d5b1e638bb8f49618064}\index{Inventory@{Inventory}!removeBook@{removeBook}}
+\index{removeBook@{removeBook}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{removeBook()}{removeBook()}}
+{\footnotesize\ttfamily \label{class_inventory_a75431d03b667d5b1e638bb8f49618064} 
+void Inventory\+::remove\+Book (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}}]{b}{}\end{DoxyParamCaption}) const}
+
+
+
+Removes a book from the inventory. 
+
+Sets the book\textquotesingle{}s entry to {\ttfamily nullptr} based on its hash index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & Pointer to the \doxylink{class_book}{Book} object to be removed. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_a75431d03b667d5b1e638bb8f49618064_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_a75431d03b667d5b1e638bb8f49618064_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventory_a08062b3b0ca5ae18e1e3db16d2b4c6f2}\index{Inventory@{Inventory}!updateBookAvailablity@{updateBookAvailablity}}
+\index{updateBookAvailablity@{updateBookAvailablity}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{updateBookAvailablity()}{updateBookAvailablity()}}
+{\footnotesize\ttfamily \label{class_inventory_a08062b3b0ca5ae18e1e3db16d2b4c6f2} 
+bool Inventory\+::update\+Book\+Availablity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_book}{Book}} \texorpdfstring{$\ast$}{*}}]{b}{}\end{DoxyParamCaption}) const}
+
+
+
+Updates the availability status of a book. 
+
+Toggles the availability of the given book.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & Pointer to the \doxylink{class_book}{Book} object whose availability will be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new availability status of the book. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_a08062b3b0ca5ae18e1e3db16d2b4c6f2_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Inventory.\+h\item 
+Inventory.\+cpp\end{DoxyCompactItemize}

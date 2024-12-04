@@ -5,7 +5,6 @@
 #ifndef LIBRARYMANAGEMENT_INVENTORY_H
 #define LIBRARYMANAGEMENT_INVENTORY_H
 
-#include <string>
 #include "Book.h"
 #include "LibraryHash.h"
 
@@ -27,7 +26,7 @@ public:
      *
      * @param size The size of the inventory (number of books).
      */
-    Inventory(int size);
+    explicit Inventory(int size);
 
     /**
      * @brief Default constructor. Initializes an inventory with a default size of 10000 books.

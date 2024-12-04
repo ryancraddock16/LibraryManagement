@@ -1,0 +1,15 @@
+<map id="Book::setDaysCheckedOut" name="Book::setDaysCheckedOut">
+<area shape="rect" id="Node000001" title="Set the number of days the book has been checked out." alt="" coords="649,80,826,106"/>
+<area shape="rect" id="Node000002" href="$classLibrarian.html#a05ad7a14d264cf4d931b59380f2c5bd7" title="Checks out a book object." alt="" coords="441,5,601,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="687,77,600,45,568,34,569,29,602,40,689,71"/>
+<area shape="rect" id="Node000003" href="$classLibrarian.html#a07ce913f789f7c21f36dad2e7d2f9024" title="Checks out a book by its ISBN." alt="" coords="441,55,601,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="634,83,601,80,602,74,634,78"/>
+<area shape="rect" id="Node000006" href="$classLibrarian.html#a8550e8f5250c49ff3b421e0fdc445d1f" title="Default constructor for Librarian." alt="" coords="458,104,585,130"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="634,107,585,112,585,107,634,102"/>
+<area shape="rect" id="Node000007" href="$classLibrarian.html#ac7b8643a53c31045baffad6bcd29d03e" title="Renews a book by extending its checkout period." alt="" coords="450,153,592,179"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="688,114,602,145,569,155,567,150,600,140,686,109"/>
+<area shape="rect" id="Node000004" href="$classLibrarian.html#a5293bfa1e0684997575d42d33d0d412e" title="Processes all reservations for books." alt="" coords="194,55,393,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="425,70,393,70,393,65,425,65"/>
+<area shape="rect" id="Node000005" href="$classLibrarian.html#a34ef7080595ab5a8d92c94c436869178" title="Returns a checked&#45;out book to the inventory." alt="" coords="5,55,146,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="178,70,146,70,146,65,178,65"/>
+</map>

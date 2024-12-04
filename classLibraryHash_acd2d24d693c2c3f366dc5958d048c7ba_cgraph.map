@@ -1,0 +1,5 @@
+<map id="LibraryHash::HashBook" name="LibraryHash::HashBook">
+<area shape="rect" id="Node000001" title="Computes a hash value for a book object based on its ISBN." alt="" coords="5,5,164,31"/>
+<area shape="rect" id="Node000002" href="$classBook.html#a3a886f96f3890afbf4d9a226e0fe83ef" title="Get the ISBN of the book." alt="" coords="212,5,312,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,16,196,16,196,21,164,21"/>
+</map>

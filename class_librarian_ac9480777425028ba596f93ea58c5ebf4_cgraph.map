@@ -1,0 +1,9 @@
+<map id="Librarian::addNewBook" name="Librarian::addNewBook">
+<area shape="rect" id="Node000001" title="Adds a new book to the inventory." alt="" coords="5,5,162,31"/>
+<area shape="rect" id="Node000002" href="$class_inventory.html#a7ec8050eb3e747fc2ca9dc36996f2ed5" title="Adds a book to the inventory." alt="" coords="210,5,344,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,16,194,16,194,21,162,21"/>
+<area shape="rect" id="Node000003" href="$class_library_hash.html#acd2d24d693c2c3f366dc5958d048c7ba" title="Computes a hash value for a book object based on its ISBN." alt="" coords="392,5,552,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="344,16,376,16,376,21,344,21"/>
+<area shape="rect" id="Node000004" href="$class_book.html#a3a886f96f3890afbf4d9a226e0fe83ef" title="Get the ISBN of the book." alt="" coords="600,5,703,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="553,16,585,16,585,21,553,21"/>
+</map>

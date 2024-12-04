@@ -1,0 +1,7 @@
+<map id="Inventory::addBook" name="Inventory::addBook">
+<area shape="rect" id="Node000001" title="Adds a book to the inventory." alt="" coords="209,31,340,56"/>
+<area shape="rect" id="Node000002" href="$classLibrarian.html#ac9480777425028ba596f93ea58c5ebf4" title="Adds a new book to the inventory." alt="" coords="5,5,161,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,35,161,31,161,26,193,30"/>
+<area shape="rect" id="Node000003" href="$classLibrarian.html#a8550e8f5250c49ff3b421e0fdc445d1f" title="Default constructor for Librarian." alt="" coords="19,55,147,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,56,147,62,146,57,193,51"/>
+</map>

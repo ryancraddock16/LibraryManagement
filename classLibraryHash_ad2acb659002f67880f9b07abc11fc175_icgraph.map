@@ -1,0 +1,27 @@
+<map id="LibraryHash::formatISBN" name="LibraryHash::formatISBN">
+<area shape="rect" id="Node000001" title="Formats an ISBN string to a long long integer." alt="" coords="1073,128,1239,154"/>
+<area shape="rect" id="Node000002" href="$classInventory.html#ada91a7f2af4b098541ec890661929bbd" title="Finds a book in the inventory by its ISBN." alt="" coords="848,55,1025,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1107,124,1024,94,989,83,990,78,1026,89,1109,119"/>
+<area shape="rect" id="Node000010" href="$classInventory.html#a6eb368aabfc9ae9dac27601766202ced" title="Checks if a book is available in the inventory by its ISBN." alt="" coords="850,128,1023,154"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="1057,144,1024,144,1024,138,1057,138"/>
+<area shape="rect" id="Node000011" href="$classLibrarian.html#a8550e8f5250c49ff3b421e0fdc445d1f" title="Default constructor for Librarian." alt="" coords="873,177,1000,203"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="1081,160,998,179,996,174,1080,155"/>
+<area shape="poly" id="edge5_Node000002_Node000002" title=" " alt="" coords="973,42,961,36,936,33,914,35,902,40,899,45,905,53,901,56,894,46,898,36,913,30,936,28,962,31,976,38"/>
+<area shape="rect" id="Node000003" href="$classLibrarian.html#a07ce913f789f7c21f36dad2e7d2f9024" title="Checks out a book by its ISBN." alt="" coords="441,5,601,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="892,50,848,34,799,21,749,14,697,12,602,14,602,8,697,6,749,9,800,16,850,28,894,46"/>
+<area shape="rect" id="Node000006" href="$classLibrarian.html#ac7b8643a53c31045baffad6bcd29d03e" title="Renews a book by extending its checkout period." alt="" coords="653,31,796,56"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="832,58,796,54,796,49,833,53"/>
+<area shape="rect" id="Node000007" href="$classLibrarian.html#ae18939f8e8972d327a532a7f77a73be6" title="Reserves a book by its ISBN." alt="" coords="649,80,800,106"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="833,83,800,87,799,81,832,77"/>
+<area shape="rect" id="Node000009" href="$classLibrarian.html#a19dbcc897ae6bfc59835b8feaac035f0" title="Returns a book by its ISBN." alt="" coords="654,153,795,179"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="863,88,849,94,802,121,748,155,745,150,799,116,847,89,862,83"/>
+<area shape="rect" id="Node000004" href="$classLibrarian.html#a5293bfa1e0684997575d42d33d0d412e" title="Processes all reservations for books." alt="" coords="194,5,393,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="425,21,393,21,393,16,425,16"/>
+<area shape="rect" id="Node000005" href="$classLibrarian.html#a34ef7080595ab5a8d92c94c436869178" title="Returns a checked&#45;out book to the inventory." alt="" coords="5,5,146,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="178,21,146,21,146,16,178,16"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="665,77,648,71,553,34,555,29,650,66,666,72"/>
+<area shape="rect" id="Node000008" href="$classLibrarian.html#a05ad7a14d264cf4d931b59380f2c5bd7" title="Checks out a book object." alt="" coords="441,80,601,106"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="634,96,602,96,602,90,634,90"/>
+<area shape="poly" id="edge11_Node000009_Node000009" title=" " alt="" coords="760,141,748,134,724,132,703,134,692,139,689,144,695,151,691,155,684,145,688,135,702,129,725,127,749,129,762,136"/>
+<area shape="poly" id="edge13_Node000010_Node000010" title=" " alt="" coords="973,116,961,109,936,107,914,109,902,113,899,119,905,126,901,129,894,119,898,110,913,103,936,101,962,104,976,111"/>
+</map>

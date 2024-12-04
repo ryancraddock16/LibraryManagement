@@ -1,0 +1,8 @@
+<map id="Inventory::updateBookAvailablity" name="Inventory::updateBookAvailablity">
+<area shape="rect" id="Node000001" title="Updates the availability status of a book." alt="" coords="5,5,214,31"/>
+<area shape="rect" id="Node000002" href="$classBook.html#ac4292948dfd94bcaa0862d009cf32358" title="Check if the book is available." alt="" coords="449,5,569,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,16,434,16,434,21,214,21"/>
+<area shape="rect" id="Node000003" href="$classBook.html#ad1fca7255c27dd9a878f400811b74979" title="Set the availability of the book." alt="" coords="262,31,401,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,27,246,31,246,36,214,33"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="401,31,433,26,434,32,402,36"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Inventory::findBookByISBN" name="Inventory::findBookByISBN">
+<area shape="rect" id="Node000001" title="Finds a book in the inventory by its ISBN." alt="" coords="5,5,188,31"/>
+<area shape="rect" id="Node000002" href="$class_library_hash.html#a40f0272e979a0a3b9493d94628947e78" title="Converts an ISBN number into a hash value." alt="" coords="236,5,412,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,16,220,16,220,21,188,21"/>
+</map>

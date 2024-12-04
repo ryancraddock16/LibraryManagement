@@ -1,0 +1,5 @@
+<map id="Librarian::calculateFine" name="Librarian::calculateFine">
+<area shape="rect" id="Node000001" title="Calculates the fine for a book based on how many days it is overdue." alt="" coords="226,13,380,38"/>
+<area shape="rect" id="Node000002" href="$classLibrarian.html#a20f8e6e4f611d948d3d1c4148cca3e9d" title="Processes overdue books and calculates fines." alt="" coords="5,5,178,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,28,178,28,178,23,211,23"/>
+</map>

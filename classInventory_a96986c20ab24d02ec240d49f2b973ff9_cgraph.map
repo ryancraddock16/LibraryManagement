@@ -1,0 +1,5 @@
+<map id="Inventory::listAvailableBooks" name="Inventory::listAvailableBooks">
+<area shape="rect" id="Node000001" title="Lists all available books in the inventory." alt="" coords="5,5,156,46"/>
+<area shape="rect" id="Node000002" href="$classBook.html#a8e85d9c86fce55c6255e1b7c38cd9bb6" title="Get detailed information about the book." alt="" coords="204,13,301,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,23,188,23,188,28,156,28"/>
+</map>

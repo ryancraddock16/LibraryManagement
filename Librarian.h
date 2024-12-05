@@ -132,6 +132,15 @@ public:
     void addNewBook(Book* book) const;
 
     /**
+	* @brief Removes a book from the inventory.
+    *
+	* Removes the given book from the inventory.
+	*
+	* @param ISBN ISBN of the book to be removed
+	*/
+    void removeBookFromInventory(long long ISBN);
+
+    /**
      * @brief Removes a book from the inventory.
      *
      * Removes the given book from the inventory.

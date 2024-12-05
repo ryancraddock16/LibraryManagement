@@ -228,6 +228,18 @@ void Librarian::addNewBook(Book *book) const {
     inventory.addBook(book);
 }
 
+
+/**
+ * @brief Removes a book from the inventory.
+ *
+ * Removes the given book from the inventory.
+ *
+ * @param ISBN ISBN of the book to be removed
+ */
+void Librarian::removeBookFromInventory(long long ISBN) {
+    inventory.removeBook(ISBN);
+}
+
 /**
  * @brief Removes a book from the inventory.
  *

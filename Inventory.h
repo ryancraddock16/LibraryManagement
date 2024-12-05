@@ -48,6 +48,15 @@ public:
     void addBook(Book* b) const;
 
     /**
+	* @brief Removes a book from the inventory by ISBN.
+    *
+	* Sets the book's entry to `nullptr` based on its hash index.
+	*
+	* @param ISBN The ISBN of the book to be removed.
+	*/
+    void removeBook(long long ISBN) const;
+
+    /**
      * @brief Removes a book from the inventory.
      *
      * Sets the book's entry to `nullptr` based on its hash index.

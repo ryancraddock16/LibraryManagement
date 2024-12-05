@@ -43,6 +43,19 @@ void Inventory::addBook(Book *b) const {
     books[LibraryHash::HashBook(b, size)] = b;
 }
 
+
+/**
+ * @brief Removes a book from the inventory by ISBN.
+ *
+ * Sets the book's entry to `nullptr` based on its hash index.
+ *
+ * @param ISBN The ISBN of the book to be removed.
+ */
+void Inventory::removeBook(const long long ISBN) const {
+    books[LibraryHash::ISBNToHash(ISBN,size)] = nullptr;
+}
+
+
 /**
  * @brief Removes a book from the inventory.
  *

@@ -157,7 +157,7 @@ long Inventory::countTotalBooks() const {
 void Inventory::print() const {
     for (int i = 0; i < size; i++) {
         if (books[i] != nullptr) {
-            cout << "Index : " << i << " " << books[i]->getInfo() << endl;
+            cout << books[i]->getInfo() << endl << endl;
         }
     }
 }

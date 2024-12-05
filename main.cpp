@@ -77,6 +77,12 @@ int main() {
                 num = LibraryHash::formatISBN(ISBN);
                 l.removeBookFromInventory(num);
                 break;
+            case '8':
+                cout << "Enter ISBN: " << endl;
+                cin >> ISBN;
+                num = LibraryHash::formatISBN(ISBN);
+                cout << l.searchBooks(num)->getInfo() << endl;
+                break;
             case 'L':
                 l.listAllBooks();
                 break;

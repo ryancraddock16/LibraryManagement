@@ -168,13 +168,13 @@ bool Book::operator==(const Book &b) const {
  */
 string Book::getInfo() const {
     return "Title: " + title +
-           " Author: " + author +
-           " Genre: " + genre +
-           " ISBN: " + to_string(ISBN) +
-           " Publication Year: " + to_string(publicationYear) +
-           " Available: " + (available ? "Yes" : "No") +
-           " Fines: " + to_string(fine) +
-           " Days Left: " + to_string(daysCheckedOut);
+           "\n    Author: " + author +
+           "\n    Genre: " + genre +
+           "\n    ISBN: " + to_string(ISBN) +
+           "\n    Publication Year: " + to_string(publicationYear) +
+           "\n    Available: " + (available ? "Yes" : "No") +
+           "\n    Fines: " + to_string(fine) +
+           "\n    Days Left: " + to_string(daysCheckedOut) ;
 }
 
 /**

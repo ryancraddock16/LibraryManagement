@@ -1,5 +1,5 @@
 <map id="Inventory" name="Inventory">
-<area shape="rect" id="Node000001" title="Manages a collection of books within the library&#39;s system." alt="" coords="5,480,165,831"/>
+<area shape="rect" id="Node000001" title="Manages a collection of books within the library&#39;s system." alt="" coords="5,480,165,852"/>
 <area shape="rect" id="Node000002" href="$classBook.html" title="Represents a book in the library management system." alt="" coords="15,5,156,417"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,417,88,463,83,463,83,417"/>
 </map>

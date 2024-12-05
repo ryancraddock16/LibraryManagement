@@ -1,0 +1,5 @@
+<map id="Inventory::removeBook" name="Inventory::removeBook">
+<area shape="rect" id="Node000001" title="Removes a book from the inventory by ISBN." alt="" coords="5,5,159,31"/>
+<area shape="rect" id="Node000002" href="$classLibraryHash.html#a40f0272e979a0a3b9493d94628947e78" title="Converts an ISBN into a hash value." alt="" coords="207,5,382,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,16,191,16,191,21,159,21"/>
+</map>

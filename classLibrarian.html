@@ -101,9 +101,9 @@ Collaboration diagram for Librarian:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLibrarian__coll__graph.png" border="0" usemap="#aLibrarian_coll__map" alt="Collaboration graph"/></div>
 <map name="aLibrarian_coll__map" id="aLibrarian_coll__map">
-<area shape="rect" title="Manages the library&#39;s book inventory, checkout system, reservations, and overdue books." alt="" coords="5,894,169,1184"/>
-<area shape="rect" href="classInventory.html" title="Manages a collection of books within the library&#39;s system." alt="" coords="7,480,167,831"/>
-<area shape="poly" title=" " alt="" coords="90,831,90,878,85,878,85,831"/>
+<area shape="rect" title="Manages the library&#39;s book inventory, checkout system, reservations, and overdue books." alt="" coords="5,915,169,1205"/>
+<area shape="rect" href="classInventory.html" title="Manages a collection of books within the library&#39;s system." alt="" coords="7,480,167,852"/>
+<area shape="poly" title=" " alt="" coords="90,851,90,898,85,898,85,851"/>
 <area shape="rect" href="classBook.html" title="Represents a book in the library management system." alt="" coords="17,5,158,417"/>
 <area shape="poly" title=" " alt="" coords="90,417,90,463,85,463,85,417"/>
 </map>
@@ -147,6 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9480777425028ba596f93ea58c5ebf4" id="r_ac9480777425028ba596f93ea58c5ebf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9480777425028ba596f93ea58c5ebf4">addNewBook</a> (<a class="el" href="classBook.html">Book</a> *book) const</td></tr>
 <tr class="memdesc:ac9480777425028ba596f93ea58c5ebf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new book to the inventory.  <br /></td></tr>
 <tr class="separator:ac9480777425028ba596f93ea58c5ebf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1274a0da3ca11a342e73eac7e01f54c7" id="r_a1274a0da3ca11a342e73eac7e01f54c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1274a0da3ca11a342e73eac7e01f54c7">removeBookFromInventory</a> (long long ISBN)</td></tr>
+<tr class="memdesc:a1274a0da3ca11a342e73eac7e01f54c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a book from the inventory.  <br /></td></tr>
+<tr class="separator:a1274a0da3ca11a342e73eac7e01f54c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d535828d4b603e12b2751c61cdd191c" id="r_a3d535828d4b603e12b2751c61cdd191c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d535828d4b603e12b2751c61cdd191c">removeBookFromInventory</a> (<a class="el" href="classBook.html">Book</a> *book) const</td></tr>
 <tr class="memdesc:a3d535828d4b603e12b2751c61cdd191c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a book from the inventory.  <br /></td></tr>
 <tr class="separator:a3d535828d4b603e12b2751c61cdd191c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -623,7 +626,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <a id="a3d535828d4b603e12b2751c61cdd191c" name="a3d535828d4b603e12b2751c61cdd191c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d535828d4b603e12b2751c61cdd191c">&#9670;&#160;</a></span>removeBookFromInventory()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d535828d4b603e12b2751c61cdd191c">&#9670;&#160;</a></span>removeBookFromInventory() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -651,12 +654,48 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classLibrarian_a3d535828d4b603e12b2751c61cdd191c_cgraph.png" border="0" usemap="#aclassLibrarian_a3d535828d4b603e12b2751c61cdd191c_cgraph" alt=""/></div>
 <map name="aclassLibrarian_a3d535828d4b603e12b2751c61cdd191c_cgraph" id="aclassLibrarian_a3d535828d4b603e12b2751c61cdd191c_cgraph">
 <area shape="rect" title="Removes a book from the inventory." alt="" coords="5,5,186,46"/>
-<area shape="rect" href="classInventory.html#a75431d03b667d5b1e638bb8f49618064" title="Removes a book from the inventory." alt="" coords="234,13,387,38"/>
+<area shape="rect" href="classInventory.html#a53688860be61a72a3b887224715996c5" title="Removes a book from the inventory by ISBN." alt="" coords="234,13,387,38"/>
 <area shape="poly" title=" " alt="" coords="186,23,218,23,218,28,186,28"/>
-<area shape="rect" href="classLibraryHash.html#acd2d24d693c2c3f366dc5958d048c7ba" title="Computes a hash value for a book object based on its ISBN." alt="" coords="435,13,593,38"/>
+<area shape="rect" href="classLibraryHash.html#a40f0272e979a0a3b9493d94628947e78" title="Converts an ISBN into a hash value." alt="" coords="435,13,610,38"/>
 <area shape="poly" title=" " alt="" coords="387,23,419,23,419,28,387,28"/>
-<area shape="rect" href="classBook.html#a3a886f96f3890afbf4d9a226e0fe83ef" title="Get the ISBN of the book." alt="" coords="641,13,742,38"/>
-<area shape="poly" title=" " alt="" coords="594,23,625,23,625,28,594,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1274a0da3ca11a342e73eac7e01f54c7" name="a1274a0da3ca11a342e73eac7e01f54c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1274a0da3ca11a342e73eac7e01f54c7">&#9670;&#160;</a></span>removeBookFromInventory() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Librarian::removeBookFromInventory </td>
+          <td>(</td>
+          <td class="paramtype">long long</td>          <td class="paramname"><span class="paramname"><em>ISBN</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a book from the inventory. </p>
+<p>Removes the given book from the inventory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ISBN</td><td>ISBN of the book to be removed </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classLibrarian_a1274a0da3ca11a342e73eac7e01f54c7_cgraph.png" border="0" usemap="#aclassLibrarian_a1274a0da3ca11a342e73eac7e01f54c7_cgraph" alt=""/></div>
+<map name="aclassLibrarian_a1274a0da3ca11a342e73eac7e01f54c7_cgraph" id="aclassLibrarian_a1274a0da3ca11a342e73eac7e01f54c7_cgraph">
+<area shape="rect" title="Removes a book from the inventory." alt="" coords="5,5,186,46"/>
+<area shape="rect" href="classInventory.html#a53688860be61a72a3b887224715996c5" title="Removes a book from the inventory by ISBN." alt="" coords="234,13,387,38"/>
+<area shape="poly" title=" " alt="" coords="186,23,218,23,218,28,186,28"/>
+<area shape="rect" href="classLibraryHash.html#a40f0272e979a0a3b9493d94628947e78" title="Converts an ISBN into a hash value." alt="" coords="435,13,610,38"/>
+<area shape="poly" title=" " alt="" coords="387,23,419,23,419,28,387,28"/>
 </map>
 </div>
 

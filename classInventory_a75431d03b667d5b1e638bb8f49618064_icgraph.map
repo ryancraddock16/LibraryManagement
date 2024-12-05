@@ -1,5 +1,0 @@
-<map id="Inventory::removeBook" name="Inventory::removeBook">
-<area shape="rect" id="Node000001" title="Removes a book from the inventory." alt="" coords="234,13,387,38"/>
-<area shape="rect" id="Node000002" href="$classLibrarian.html#a3d535828d4b603e12b2751c61cdd191c" title="Removes a book from the inventory." alt="" coords="5,5,186,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,28,186,28,186,23,218,23"/>
-</map>

@@ -1,7 +1,13 @@
 <map id="LibraryHash::ISBNToHash" name="LibraryHash::ISBNToHash">
-<area shape="rect" id="Node000001" title="Converts an ISBN into a hash value." alt="" coords="231,31,406,56"/>
-<area shape="rect" id="Node000002" href="$classInventory.html#a8e2fd9f4b8abe7f2ca08f0ab32dadfc0" title="Finds a book in the inventory by its ISBN." alt="" coords="5,5,183,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,35,183,31,183,26,215,29"/>
-<area shape="rect" id="Node000003" href="$classInventory.html#a5e6448a98c4211580ae463a25ec984fc" title="Checks if a book is available by its ISBN." alt="" coords="7,55,181,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,57,182,61,181,56,215,52"/>
+<area shape="rect" id="Node000001" title="Converts an ISBN into a hash value." alt="" coords="459,55,634,80"/>
+<area shape="rect" id="Node000002" href="$classInventory.html#a8e2fd9f4b8abe7f2ca08f0ab32dadfc0" title="Finds a book in the inventory by its ISBN." alt="" coords="234,5,411,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="469,53,384,34,385,29,471,48"/>
+<area shape="rect" id="Node000003" href="$classInventory.html#a5e6448a98c4211580ae463a25ec984fc" title="Checks if a book is available by its ISBN." alt="" coords="236,55,409,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="443,70,410,70,410,65,443,65"/>
+<area shape="rect" id="Node000004" href="$classInventory.html#a53688860be61a72a3b887224715996c5" title="Removes a book from the inventory by ISBN." alt="" coords="246,104,399,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="471,87,385,106,384,101,469,82"/>
+<area shape="rect" id="Node000005" href="$classLibrarian.html#a3d535828d4b603e12b2751c61cdd191c" title="Removes a book from the inventory." alt="" coords="5,63,186,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="230,106,186,99,187,94,231,101"/>
+<area shape="rect" id="Node000006" href="$classLibrarian.html#a1274a0da3ca11a342e73eac7e01f54c7" title="Removes a book from the inventory." alt="" coords="5,128,186,169"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="231,132,187,139,186,133,230,127"/>
 </map>

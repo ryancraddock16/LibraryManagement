@@ -16,8 +16,8 @@ int main() {
     while (userOption != 'q') {
         cout << "Options: " << endl;
         cout << "   1- Checkout book. 2- Return book. 3- Reserve Book. 4- Cancel Reservation. 5- Renew Book." <<
-                 endl << "   6- Add New Book. 7- Remove Book. 8- Search Books. O- List Overdue Books. R- List Reservations. " <<
-                    " L- List Books. q- Quit program" << endl;
+                 endl << "   6- Add New Book. 7- Remove Book. 8- Search Books. O- List Overdue Books. R- List Reservations. " << endl <<
+                    "   L- List Books. q- Quit program" << endl;
         cin >> userOption;
         switch (userOption) {
             case '1':

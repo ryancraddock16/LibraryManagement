@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['calculatefine_0',['calculateFine',['../classLibrarian.html#a588ca566f3b696459fb451bcce4f8b60',1,'Librarian']]],
-  ['cancelreservation_1',['cancelReservation',['../classLibrarian.html#aff1edfd3d82904f32da3ca11c1c0ec26',1,'Librarian']]],
-  ['checkout_2',['checkOut',['../classLibrarian.html#a81ea3557247538ad19b69e148b1f15c1',1,'Librarian']]],
-  ['checkoutbook_3',['checkoutBook',['../classLibrarian.html#a07ce913f789f7c21f36dad2e7d2f9024',1,'Librarian::checkoutBook(long long ISBN)'],['../classLibrarian.html#a05ad7a14d264cf4d931b59380f2c5bd7',1,'Librarian::checkoutBook(Book *b, long long ISBN)']]],
-  ['counttotalbooks_4',['countTotalBooks',['../classInventory.html#a71dfd396d55aaed7dbceab35a196ae08',1,'Inventory']]]
+  ['book_0',['Book',['../classBook.html',1,'Book'],['../classBook.html#a2eac9e235a08763158f78533f7a83e1f',1,'Book::Book()'],['../classBook.html#af6867d930044e9abb843632c994dd528',1,'Book::Book(string title, string author, string genre, short publicationYear, long long isbn, bool isAvailable)']]],
+  ['books_1',['books',['../classInventory.html#a840b687b7759fdffe5391291c9be53f0',1,'Inventory']]]
 ];

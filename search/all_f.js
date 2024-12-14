@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7einventory_0',['~Inventory',['../classInventory.html#a6c6dfcb6d977c74a7abf46809e892e3d',1,'Inventory']]]
+  ['title_0',['title',['../classBook.html#a694d90d6902d5f9d280db89ba533fad6',1,'Book']]]
 ];

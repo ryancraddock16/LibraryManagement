@@ -19,7 +19,7 @@
  */
 Librarian::Librarian() {
     checkOut.reserve(10);
-    ifstream file("/Users/josephcampione/CLionProjects/LibraryManagement/BookInventory.csv");
+    ifstream file("../Extras/BookInventory.csv");
     vector<vector<string>> tempVec;
     string discard;
     if(!file.is_open()){

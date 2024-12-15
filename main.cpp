@@ -1,4 +1,6 @@
 #include <iostream>
+#include <__filesystem/operations.h>
+
 #include "Librarian.h"
 #include "LibraryHash.h"
 

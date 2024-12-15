@@ -55,7 +55,8 @@ references, which makes it easier to manage when multiple data structures are po
 
 ## UML diagram
 The UML Diagram is found in two places, both online at https://ultrapheonix.github.io/LibraryManagement/ and 
-found in the file 
+found here
+![UML Diagram](Extras/UMLDiagram.png)
 
 ## Code Snippets 
 The entire project is centered around this method, which is my static hash method
@@ -72,3 +73,4 @@ and then putting it at that index in the array.
 Overall, I found this project got me substantially more conformable with C++ and how to work with it. This project
 gave me a good base to build more experience off of. I appreciated how this project put into practice many of the things that 
 I have been learning in CSC 104, and how it allowed me to grow in my overall coding ability, both in and out of C++. 
+

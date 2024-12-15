@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_7einventory_0',['~Inventory',['../classInventory.html#a6c6dfcb6d977c74a7abf46809e892e3d',1,'Inventory']]]
+  ['uml_20diagram_0',['UML diagram',['../md_README.html#autotoc_md10',1,'']]],
+  ['updatebookavailablity_1',['updateBookAvailablity',['../classInventory.html#ab9a6f625ba8ba29b847061f3ae45e9c0',1,'Inventory']]]
 ];

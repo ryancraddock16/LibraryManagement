@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['searchbooks_0',['searchBooks',['../classLibrarian.html#af064e2f38090db23b7ca2c45c79754f1',1,'Librarian::searchBooks(const std::string &amp;title) const'],['../classLibrarian.html#a474812f3e984c3871dd9fb50516db324',1,'Librarian::searchBooks(long long ISBN) const']]],
-  ['setauthor_1',['setAuthor',['../classBook.html#a337882e4125398ee427c6cf3b3e61516',1,'Book']]],
-  ['setdayscheckedout_2',['setDaysCheckedOut',['../classBook.html#a1afc35ff2cfbd033195c27bb7e05faa2',1,'Book']]],
-  ['setfine_3',['setFine',['../classBook.html#a70a5fc7633238894cb354bf994b1b52c',1,'Book']]],
-  ['setgenre_4',['setGenre',['../classBook.html#a2359b1664978ee9f2afb3c138363daf4',1,'Book']]],
-  ['setisavailable_5',['setIsAvailable',['../classBook.html#ad1fca7255c27dd9a878f400811b74979',1,'Book']]],
-  ['setisbn_6',['setIsbn',['../classBook.html#aa28e409cb784c0d7d749bae25ddd01f5',1,'Book']]],
-  ['setpublicationyear_7',['setPublicationYear',['../classBook.html#a52155bbb816f5d94bd3b84f076708cac',1,'Book']]],
-  ['settitle_8',['setTitle',['../classBook.html#aafb5ecab2004573a41e67b6e0b02e178',1,'Book']]],
-  ['size_9',['size',['../classInventory.html#a6b6ddeaf437fa4cbfbed9284561b0f7e',1,'Inventory']]]
+  ['references_0',['Pointers and references',['../md_README.html#autotoc_md5',1,'']]],
+  ['removebook_1',['removeBook',['../classInventory.html#a53688860be61a72a3b887224715996c5',1,'Inventory::removeBook(long long ISBN) const'],['../classInventory.html#a75431d03b667d5b1e638bb8f49618064',1,'Inventory::removeBook(const Book *b) const']]],
+  ['removebookfrominventory_2',['removeBookFromInventory',['../classLibrarian.html#a1274a0da3ca11a342e73eac7e01f54c7',1,'Librarian::removeBookFromInventory(long long ISBN)'],['../classLibrarian.html#a3d535828d4b603e12b2751c61cdd191c',1,'Librarian::removeBookFromInventory(Book *book) const']]],
+  ['renewbook_3',['renewBook',['../classLibrarian.html#ac7b8643a53c31045baffad6bcd29d03e',1,'Librarian']]],
+  ['reservations_4',['reservations',['../classLibrarian.html#a84487289418cf7f6a32d8063cb8b5a51',1,'Librarian']]],
+  ['reservebook_5',['reserveBook',['../classLibrarian.html#ae18939f8e8972d327a532a7f77a73be6',1,'Librarian']]],
+  ['returnbook_6',['returnBook',['../classLibrarian.html#a19dbcc897ae6bfc59835b8feaac035f0',1,'Librarian::returnBook(long long ISBN)'],['../classLibrarian.html#a34ef7080595ab5a8d92c94c436869178',1,'Librarian::returnBook(Book *book)']]]
 ];

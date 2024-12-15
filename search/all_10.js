@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['updatebookavailablity_0',['updateBookAvailablity',['../classInventory.html#ab9a6f625ba8ba29b847061f3ae45e9c0',1,'Inventory']]]
+  ['testing_0',['Testing',['../md_README.html#autotoc_md8',1,'']]],
+  ['title_1',['title',['../classBook.html#a694d90d6902d5f9d280db89ba533fad6',1,'Book']]]
 ];

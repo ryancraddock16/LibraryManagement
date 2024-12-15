@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['operator_3c_0',['operator&lt;',['../classBook.html#a5ca73bf93050c411cbbafa062224a386',1,'Book']]],
-  ['operator_3d_3d_1',['operator==',['../classBook.html#ab174515095dc70f8f1fa0abfff3f7d9d',1,'Book']]],
-  ['overview_2',['Project Overview',['../md_README.html#autotoc_md1',1,'']]]
+  ['management_3a_20csc_20104_20final_20project_0',['Library Management: CSC 104 Final Project',['../md_README.html',1,'']]]
 ];

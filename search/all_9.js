@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['librarian_0',['Librarian',['../classLibrarian.html',1,'Librarian'],['../classLibrarian.html#a8550e8f5250c49ff3b421e0fdc445d1f',1,'Librarian::Librarian()']]],
-  ['library_20management_3a_20csc_20104_20final_20project_1',['Library Management: CSC 104 Final Project',['../md_README.html',1,'']]],
-  ['libraryhash_2',['LibraryHash',['../classLibraryHash.html',1,'']]],
-  ['listallbooks_3',['listAllBooks',['../classLibrarian.html#ae15bb45f8ded3ca0a17dc7e61b4c47f0',1,'Librarian']]],
-  ['listavailablebooks_4',['listAvailableBooks',['../classInventory.html#a96986c20ab24d02ec240d49f2b973ff9',1,'Inventory']]],
-  ['listcheckedoutbooks_5',['listCheckedOutBooks',['../classInventory.html#a3a09ed76cde8fb7f61f3f19f832cfad1',1,'Inventory']]],
-  ['listoverduebooks_6',['listOverdueBooks',['../classLibrarian.html#ad5fdb6f181eaf72dc05337a070149820',1,'Librarian']]],
-  ['listreservations_7',['listReservations',['../classLibrarian.html#ae9782e242f5cee750813ee4b680687d0',1,'Librarian']]]
+  ['inventory_0',['Inventory',['../classInventory.html',1,'Inventory'],['../classInventory.html#a732005f1d3059f700447f566a3d8660b',1,'Inventory::Inventory(int size)'],['../classInventory.html#a10485613fc8bfb32ee564d9b5110f8fb',1,'Inventory::Inventory()']]],
+  ['inventory_1',['inventory',['../classLibrarian.html#a18ce88b446b814b868585023293f8e2e',1,'Librarian']]],
+  ['io_2',['File IO',['../md_README.html#autotoc_md6',1,'']]],
+  ['isavailable_3',['isAvailable',['../classBook.html#ac4292948dfd94bcaa0862d009cf32358',1,'Book']]],
+  ['isbn_4',['ISBN',['../classBook.html#a0edc58003d97d8f1305841017f0487be',1,'Book']]],
+  ['isbntohash_5',['ISBNToHash',['../classLibraryHash.html#a40f0272e979a0a3b9493d94628947e78',1,'LibraryHash']]],
+  ['isbookavailable_6',['isBookAvailable',['../classInventory.html#a6eb368aabfc9ae9dac27601766202ced',1,'Inventory::isBookAvailable(string ISBN) const'],['../classInventory.html#a5e6448a98c4211580ae463a25ec984fc',1,'Inventory::isBookAvailable(long long int ISBN) const']]]
 ];

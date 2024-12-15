@@ -90,7 +90,38 @@ $(function(){ initResizable(false); });
 <div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Project Overview</h1>
-<p>This program's basic function is a </p>
+<p>This program can be used to manage a Librarians inventory of books using a text based interface. This program is a lightweight way to manage books in a librarians inventory, and make it easier for them to manage reservations and to manage check-outs.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Design Specifications</h1>
+<p>This program uses three classes to achieve this, Books, <a class="el" href="classInventory.html" title="Manages a collection of books within the library&#39;s system.">Inventory</a>, and <a class="el" href="classLibrarian.html" title="Manages the library&#39;s book inventory, checkout system, reservations, and overdue books.">Librarian</a>. I chose not to use inheritance for classes as I did not think it would be necessary and that it would over complicate the code for these classes. The <a class="el" href="classInventory.html" title="Manages a collection of books within the library&#39;s system.">Inventory</a> does have an "accessory" class, Library Hash, which implements the HashMap which I will be getting into later. I chose to use a HashMap because of my prior knowledge of the structure and because it made the most sense for this use case, which I will go into more detail later about. All of my methods are based around editing attributes of the book class, and making it as easy as possible to do so. This implementation was the most efficient, by access time and simplest to use by the user that I was able to create for this circumstance.</p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Data Structures</h1>
+<p>The data structure which this program is centered around is the hash-map. This, in my view, was the best because of its low access time. I used the ISBN of the book, and based my hash value off of that, making for an implementation that is not adding on storage or another attribute to the book class, but only using a pre-existent one. If I had more time, one improvement I could make is the usage of a binary search tree so that in the unlikely case of two ISBN producing the same value it would not produce an error, which is one point of possible error in the project. This likelihood is low however, as I used a large prime number to base my HashKey off of, making it unlikely that diving it by a number would produce the same value.</p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Object Oriented Programming</h1>
+<p>This entire project is mainly based around the book class, which has instances created and then pointed too by the inventory class. This project uses some static methods to handle basic data processing, and some methods in the inventory class which correspond to methods in the librarian class to find and retrieve books from the Hash Map.</p>
+<h1><a class="anchor" id="autotoc_md5"></a>
+Pointers and references</h1>
+<p>This entire program is centered around the use of pointers to instances of Books, and using references of books to manipulate and know what user currently has a book checked out, and then track reservations through pointers to the reserved book.</p>
+<h1><a class="anchor" id="autotoc_md6"></a>
+File IO</h1>
+<p>The program uses a basic file input system to take the preexisting BookInventory.csv file and put the data from it into a 2d vector for data processing using streams.</p>
+<h1><a class="anchor" id="autotoc_md7"></a>
+Error Handling</h1>
+<p>This program uses basic error handling to determine if the file is not in the correct spot or if the user inputted something incorrect it returns null pointers when something is not found to be in the correct place, which produces a error message.</p>
+<h1><a class="anchor" id="autotoc_md8"></a>
+Testing</h1>
+<p>Most of the code in this project is basic boilerplate code, and much of the logic was handled in a few methods, so fortunately I was able to do only a bit of testing until I was able to do a full code test at the very end. That means I was able to test for full system errors, and handle them when they came up, and know how each class interacted with the other more efficiently.</p>
+<h1><a class="anchor" id="autotoc_md9"></a>
+Challenges</h1>
+<p>The biggest challenge in this project was managing pointers and managing references, as everything else I had some prior knowledge and experience on how to do. I had to learn how pointers interacted with each-other, and how to effectively the situation when multiple pointers are pointing to the same thing. I solved this by more learning, and choosing to center my project around pointers instead of references, which makes it easier to manage when multiple data structures are pointing to one book.</p>
+<h1><a class="anchor" id="autotoc_md10"></a>
+UML diagram</h1>
+<p>The UML Diagram is found in two places, both online at <a href="https://ultrapheonix.github.io/LibraryManagement/">https://ultrapheonix.github.io/LibraryManagement/</a> and found in the file</p>
+<h1><a class="anchor" id="autotoc_md11"></a>
+Code Snippets</h1>
+<p>The entire project is centered around this method, which is my static hash method <br  />
+ </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->

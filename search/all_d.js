@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['removebook_0',['removeBook',['../classInventory.html#a53688860be61a72a3b887224715996c5',1,'Inventory::removeBook(long long ISBN) const'],['../classInventory.html#a75431d03b667d5b1e638bb8f49618064',1,'Inventory::removeBook(const Book *b) const']]],
-  ['removebookfrominventory_1',['removeBookFromInventory',['../classLibrarian.html#a1274a0da3ca11a342e73eac7e01f54c7',1,'Librarian::removeBookFromInventory(long long ISBN)'],['../classLibrarian.html#a3d535828d4b603e12b2751c61cdd191c',1,'Librarian::removeBookFromInventory(Book *book) const']]],
-  ['renewbook_2',['renewBook',['../classLibrarian.html#ac7b8643a53c31045baffad6bcd29d03e',1,'Librarian']]],
-  ['reservations_3',['reservations',['../classLibrarian.html#a84487289418cf7f6a32d8063cb8b5a51',1,'Librarian']]],
-  ['reservebook_4',['reserveBook',['../classLibrarian.html#ae18939f8e8972d327a532a7f77a73be6',1,'Librarian']]],
-  ['returnbook_5',['returnBook',['../classLibrarian.html#a19dbcc897ae6bfc59835b8feaac035f0',1,'Librarian::returnBook(long long ISBN)'],['../classLibrarian.html#a34ef7080595ab5a8d92c94c436869178',1,'Librarian::returnBook(Book *book)']]]
+  ['pointers_20and_20references_0',['Pointers and references',['../md_README.html#autotoc_md5',1,'']]],
+  ['print_1',['print',['../classInventory.html#af74a3e1cb0c49a8f3481faf139154cce',1,'Inventory']]],
+  ['processoverduebooks_2',['processOverdueBooks',['../classLibrarian.html#a20f8e6e4f611d948d3d1c4148cca3e9d',1,'Librarian']]],
+  ['processreservations_3',['processReservations',['../classLibrarian.html#a5293bfa1e0684997575d42d33d0d412e',1,'Librarian']]],
+  ['programming_4',['Object Oriented Programming',['../md_README.html#autotoc_md4',1,'']]],
+  ['project_5',['Library Management: CSC 104 Final Project',['../md_README.html',1,'']]],
+  ['project_20overview_6',['Project Overview',['../md_README.html#autotoc_md1',1,'']]],
+  ['publicationyear_7',['publicationYear',['../classBook.html#a82aa970a5e45e2028eaa5d1725cf5451',1,'Book']]]
 ];
